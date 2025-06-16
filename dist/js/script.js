@@ -74,9 +74,9 @@ const form = (selectorForm, selectorBtn) => {
       btn.style.display = '';
     }, 4000);
   };
-  const postData = async (data, spinner) => {
+  const postData = (data, spinner) => {
     try {
-      await new Promise(resolve => setTimeout(resolve, 5000));
+      // await new Promise((resolve) => setTimeout(resolve, 5000));
       // throw new Error('');
       console.log(data);
       const success = createSuccessMessage();
@@ -220,28 +220,28 @@ const webProducts = [{
   id: 'picture',
   name: 'picture',
   link: 'https://picture.sergeykarakoskin.ru/',
-  img: '../assets/img/backgrounds_portfolio/frontend/picture.png',
+  img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/picture.png?raw=true',
   stack: 'JavaScript',
   category: 'frontend'
 }, {
   id: 'loan',
   name: 'loan',
   link: 'https://loan.sergeykarakoskin.ru/',
-  img: '../assets/img/background_portfolio/frontend/picture',
+  img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/loan.png?raw=true',
   stack: 'JavaScript',
   category: 'frontend'
 }, {
   id: 'food',
   name: 'food',
   link: 'https://test.sergeykarakoskin.ru/',
-  img: '../assets/img/background_portfolio/frontend/picture',
+  img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/food.png?raw=true',
   stack: 'JavaScript',
   category: 'frontend'
 }, {
   id: 'window',
   name: 'window',
   link: 'https://window.sergeykarakoskin.ru/',
-  img: '../assets/img/background_portfolio/frontend/picture',
+  img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/window.png?raw=true',
   stack: 'JavaScript',
   category: 'frontend'
 }];

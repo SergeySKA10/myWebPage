@@ -118,8 +118,9 @@
             padding-left: 100px;
         }
         &_me {
-            height: 774px;
+            max-height: 774px;
             width: 650px;
+            object-fit: contain;
             display: block;
             border-radius: 20px;
         }

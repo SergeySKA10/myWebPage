@@ -152,4 +152,4 @@ gulp.task('prod', () => {
         .pipe(gulp.dest(dist + '/assets/css'));
 });
 
-gulp.task('default', gulp.parallel('build', 'watch'));
+gulp.task('default', gulp.parallel('watch', 'build'));
