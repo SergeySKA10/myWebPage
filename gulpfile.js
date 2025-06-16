@@ -6,7 +6,7 @@ const gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
-    imagemin = require('gulp-imagemin'),
+    // imagemin = require('gulp-imagemin'),
     htmlmin = require('gulp-htmlmin'),
     webpack = require('webpack-stream');
 
@@ -38,13 +38,13 @@ gulp.task('icons', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('images', function () {
-    return gulp
-        .src('src/assets/img/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest(dist + '/assets/img'))
-        .pipe(browserSync.stream());
-});
+// gulp.task('images', function () {
+//     return gulp
+//         .src('src/assets/img/**/*')
+//         .pipe(imagemin())
+//         .pipe(gulp.dest(dist + '/assets/img'))
+//         .pipe(browserSync.stream());
+// });
 
 gulp.task('build-js', () => {
     return gulp
@@ -86,10 +86,7 @@ gulp.task('build-js', () => {
         .pipe(browserSync.stream());
 });
 
-gulp.task(
-    'build',
-    gulp.parallel('styles', 'icons', 'html', 'images', 'build-js')
-);
+gulp.task('build', gulp.parallel('styles', 'icons', 'html', 'build-js'));
 
 gulp.task('watch', function () {
     browserSync.init({
@@ -101,13 +98,13 @@ gulp.task('watch', function () {
     gulp.watch('src/assets/sass/**/*.+(scss|css)', gulp.parallel('styles'));
     gulp.watch('src/*.html').on('change', gulp.parallel('html'));
     gulp.watch('src/assets/icons/**/*').on('all', gulp.parallel('icons'));
-    gulp.watch('src/assets/img/**/*').on('all', gulp.parallel('images'));
+    // gulp.watch('src/assets/img/**/*').on('all', gulp.parallel('images'));
     gulp.watch('src/js/**/*').on('all', gulp.parallel('build'));
 });
 
 gulp.task('prod', () => {
     gulp.src('./src/index.html').pipe(gulp.dest(dist));
-    gulp.src('./src/assets/img/**/*.*').pipe(gulp.dest(dist + '/assets/img'));
+    // gulp.src('./src/assets/img/**/*.*').pipe(gulp.dest(dist + '/assets/img'));
     gulp.src('./src/assets/icons/**/*.*').pipe(
         gulp.dest(dist + '/assets/icons')
     );
