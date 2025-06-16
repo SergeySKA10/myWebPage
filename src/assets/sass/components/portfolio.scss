@@ -1,0 +1,98 @@
+.portfolio {
+    min-height: 1000px;
+    &__header {
+        height: 321px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('../img/portfolio_header.png') center center/cover
+            no-repeat;
+    }
+    &__nav {
+        padding: 10px 100px;
+        background-color: rgb(26, 26, 26);
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        &_li {
+            width: 149px;
+            height: 48px;
+            left: 885px;
+            top: 353px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(124, 124, 124);
+            font-size: 18px;
+            line-height: 18px;
+            border-bottom: 1px solid rgb(124, 124, 124);
+            cursor: pointer;
+        }
+    }
+    &__pages {
+        background-color: rgb(26, 26, 26);
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 0px));
+        grid-template-rows: repeat(auto-fill, minmax(400px, 0px));
+        grid-auto-rows: minmax(400px, 0px);
+    }
+    &__page {
+        position: relative;
+        text-decoration: none;
+        &_img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+        &_bg {
+            position: relative;
+            z-index: 2;
+            transition: all 0.5s;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255, 0.2);
+            &:hover {
+                opacity: 0;
+            }
+        }
+        &_descr {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 30px;
+            letter-spacing: 1px;
+            width: 400px;
+            text-align: center;
+        }
+    }
+    &__more {
+        height: 70px;
+        background-color: rgb(26, 26, 26);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.tab_active {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}

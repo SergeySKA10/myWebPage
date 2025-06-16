@@ -1,0 +1,26 @@
+@use './fonts/fonts.scss';
+@use './components/headers.scss';
+@use './components/buttons.scss';
+@use './components/introduct.scss';
+@use './components/portfolio.scss';
+@use './components/skills.scss';
+@use './components/form.scss';
+@use './components/footer.scss';
+@use './components/line.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(215, 215, 215);
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 1420px;
+}

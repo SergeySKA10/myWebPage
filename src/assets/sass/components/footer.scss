@@ -1,0 +1,94 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 30px;
+    background-color: rgb(26, 26, 26);
+    min-height: 326px;
+    gap: 70px;
+    &__back {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        span {
+            position: relative;
+            animation: top 1.5s ease infinite;
+            border: none;
+        }
+        span::after {
+            content: '';
+            border: none;
+            position: relative;
+            transform: rotate(45deg);
+            left: 6px;
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+        span::before {
+            border: none;
+            content: '';
+            position: relative;
+            right: 5px;
+            top: 1px;
+            transform: rotate(135deg);
+            display: block;
+            width: 16px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+        .min::after {
+            width: 12px;
+            left: 5px;
+            top: -1px;
+        }
+        .min::before {
+            width: 12px;
+            right: 2px;
+        }
+    }
+    &__contacts {
+        &_social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    &__author {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+.back_up {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@keyframes top {
+    from {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}

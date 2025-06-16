@@ -1,0 +1,127 @@
+.introducing {
+    display: flex;
+    justify-content: center;
+    min-height: 800px;
+    padding-top: 50px;
+    background: linear-gradient(
+        100deg,
+        rgba(215, 215, 215, 1) 50%,
+        rgba(0, 0, 0, 1) 50%
+    );
+    &__me {
+        padding: 0px 50px 100px 271px;
+        width: 50%;
+    }
+    &__header {
+        min-height: 46px;
+    }
+    &__nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            list-style-type: none;
+        }
+        &_li {
+            transition: all 0.5s;
+            width: 147px;
+            height: 46px;
+            padding: 8px 15px;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            line-height: 21px;
+            text-align: center;
+            border-radius: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+    &__greetings {
+        margin-top: 100px;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        line-height: 47px;
+    }
+    &__name {
+        margin-top: 34px;
+        color: rgb(0, 0, 0);
+        font-size: 80px;
+        line-height: 94px;
+    }
+    &__descr {
+        margin-top: 10px;
+        width: 426px;
+        color: rgb(145, 145, 145);
+        font-size: 20px;
+        line-height: 25px;
+        text-transform: uppercase;
+    }
+    &__contacts {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &_social {
+            display: flex;
+            gap: 31px;
+            align-items: center;
+        }
+        &_icon {
+            transition: all 0.3s;
+            padding: 10px 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 61px;
+            height: 56px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            background: rgb(196, 196, 196);
+            img {
+                height: 34px;
+                width: 34px;
+            }
+            &:hover {
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__contact_me {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    &__about {
+        margin-top: 70px;
+        height: 50px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        &_descr {
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__photo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &_img {
+            padding-left: 100px;
+        }
+        &_me {
+            height: 774px;
+            width: 650px;
+            display: block;
+            border-radius: 20px;
+        }
+    }
+}
