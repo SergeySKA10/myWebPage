@@ -221,28 +221,28 @@ const webProducts = [{
   name: 'picture',
   link: 'https://picture.sergeykarakoskin.ru/',
   img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/picture.png?raw=true',
-  stack: 'JavaScript',
+  stack: 'JavaScript (Desktop)',
   category: 'frontend'
 }, {
   id: 'loan',
   name: 'loan',
   link: 'https://loan.sergeykarakoskin.ru/',
   img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/loan.png?raw=true',
-  stack: 'JavaScript',
+  stack: 'JavaScript (Desktop)',
   category: 'frontend'
 }, {
   id: 'food',
   name: 'food',
   link: 'https://test.sergeykarakoskin.ru/',
   img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/food.png?raw=true',
-  stack: 'JavaScript',
+  stack: 'JavaScript (Desktop)',
   category: 'frontend'
 }, {
   id: 'window',
   name: 'window',
   link: 'https://window.sergeykarakoskin.ru/',
   img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/window.png?raw=true',
-  stack: 'JavaScript',
+  stack: 'JavaScript (Desktop)',
   category: 'frontend'
 }];
 const portfolio = () => {
@@ -332,27 +332,27 @@ const skills = {
   using: [{
     id: 'HTML5',
     name: 'HTML5',
-    linkIcons: 'https://img.icons8.com/?size=80&id=owWiEaAJmGKK&format=png'
+    linkIcons: 'https://img.icons8.com/?size=80&id=D2Hi2VkJSi33&format=png'
   }, {
     id: 'CSS3',
     name: 'CSS3',
-    linkIcons: 'https://img.icons8.com/?size=48&id=21278&format=png'
+    linkIcons: 'https://img.icons8.com/?size=80&id=YjeKwnSQIBUq&format=png'
   }, {
     id: 'SASS',
     name: 'SASS',
-    linkIcons: 'https://img.icons8.com/?size=80&id=78Fr72VCwbPq&format=png'
+    linkIcons: 'https://img.icons8.com/?size=48&id=QBqFNfPPB2Kx&format=png'
   }, {
     id: 'Bootstrap',
     name: 'Bootstrap',
-    linkIcons: 'https://img.icons8.com/?size=48&id=EzPCiQUqWWEa&format=png'
+    linkIcons: 'https://img.icons8.com/?size=80&id=BASPRdx1MrMq&format=png'
   }, {
     id: 'JavaScript',
     name: 'JavaScript',
-    linkIcons: 'https://img.icons8.com/?size=48&id=52wKEsyyo49O&format=png'
+    linkIcons: 'https://img.icons8.com/?size=64&id=Nkym0Ujb8VGI&format=png'
   }, {
     id: 'TypeScript',
     name: 'TypeScript',
-    linkIcons: 'https://img.icons8.com/?size=80&id=HcQEdKCkXUs3&format=png'
+    linkIcons: 'https://img.icons8.com/?size=48&id=nCj4PvnCO0tZ&format=png'
   }, {
     id: 'React',
     name: 'React',
@@ -377,7 +377,7 @@ const skills = {
   }, {
     id: 'NextJS',
     name: 'NextJS',
-    linkIcons: 'https://img.icons8.com/?size=48&id=yUdJlcKanVbh&format=png'
+    linkIcons: 'https://img.icons8.com/?size=48&id=MWiBjkuHeMVq&format=png'
   }, {
     id: 'ExpressJS',
     name: 'ExpressJS',
@@ -390,15 +390,15 @@ const skills = {
   other: [{
     id: 'Gulp',
     name: 'Gulp',
-    linkIcons: 'https://img.icons8.com/?size=32&id=GX4iT6biRXL-&format=png'
+    linkIcons: 'https://img.icons8.com/?size=80&id=BpsdR48voUpa&format=png'
   }, {
     id: 'Webpack',
-    name: 'PosWebpacktgreSQL',
+    name: 'Webpack',
     linkIcons: 'https://img.icons8.com/?size=80&id=QjbHx7WUskg1&format=png'
   }, {
     id: 'Figma',
     name: 'Figma',
-    linkIcons: 'https://img.icons8.com/?size=48&id=zfHRZ6i1Wg0U&format=png'
+    linkIcons: 'https://img.icons8.com/?size=48&id=W0YEwBDDfTeu&format=png'
   }, {
     id: 'Git',
     name: 'Git',

@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp'),
-    browserSync = require('browser-sync'),
+    browserSync = require('browser-sync').create(),
     sass = require('gulp-sass')(require('sass')),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
@@ -86,8 +86,6 @@ gulp.task('build-js', () => {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.parallel('styles', 'icons', 'html', 'build-js'));
-
 gulp.task('watch', function () {
     browserSync.init({
         server: dist,
@@ -101,6 +99,8 @@ gulp.task('watch', function () {
     // gulp.watch('src/assets/img/**/*').on('all', gulp.parallel('images'));
     gulp.watch('src/js/**/*').on('all', gulp.parallel('build'));
 });
+
+gulp.task('build', gulp.parallel('build-js'));
 
 gulp.task('prod', () => {
     gulp.src('./src/index.html').pipe(gulp.dest(dist));
@@ -152,4 +152,4 @@ gulp.task('prod', () => {
         .pipe(gulp.dest(dist + '/assets/css'));
 });
 
-gulp.task('default', gulp.parallel('watch', 'build'));
+gulp.task('default', gulp.parallel('build', 'watch'));

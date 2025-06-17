@@ -4,7 +4,7 @@ const webProducts = [
         name: 'picture',
         link: 'https://picture.sergeykarakoskin.ru/',
         img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/picture.png?raw=true',
-        stack: 'JavaScript',
+        stack: 'JavaScript (Desktop)',
         category: 'frontend',
     },
     {
@@ -12,7 +12,7 @@ const webProducts = [
         name: 'loan',
         link: 'https://loan.sergeykarakoskin.ru/',
         img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/loan.png?raw=true',
-        stack: 'JavaScript',
+        stack: 'JavaScript (Desktop)',
         category: 'frontend',
     },
     {
@@ -20,7 +20,7 @@ const webProducts = [
         name: 'food',
         link: 'https://test.sergeykarakoskin.ru/',
         img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/food.png?raw=true',
-        stack: 'JavaScript',
+        stack: 'JavaScript (Desktop)',
         category: 'frontend',
     },
     {
@@ -28,7 +28,7 @@ const webProducts = [
         name: 'window',
         link: 'https://window.sergeykarakoskin.ru/',
         img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/window.png?raw=true',
-        stack: 'JavaScript',
+        stack: 'JavaScript (Desktop)',
         category: 'frontend',
     },
 ];
