@@ -96,7 +96,10 @@ gulp.task('watch', function () {
     gulp.watch('src/mailer/**/*').on('all', gulp.parallel('mailer'));
 });
 
-gulp.task('build', gulp.parallel('build-js'));
+gulp.task(
+    'build',
+    gulp.parallel('build-js', 'styles', 'html', 'icons', 'mailer')
+);
 
 gulp.task('prod', () => {
     gulp.src('./src/index.html')
@@ -150,4 +153,4 @@ gulp.task('prod', () => {
         .pipe(gulp.dest(dist + '/assets/css'));
 });
 
-gulp.task('default', gulp.parallel('build', 'watch'));
+gulp.task('default', gulp.parallel('watch'));
