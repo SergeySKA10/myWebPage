@@ -1,0 +1,23 @@
+.spinner {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    display: block;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+.success {
+    display: block;
+    text-align: center;
+    color: green;
+    font-size: 14px;
+    padding: 2px 10px;
+}

@@ -1,3 +1,5 @@
+import { postData } from '../../services/postData';
+
 export const form = (selectorForm, selectorBtn) => {
     const form = document.querySelector(selectorForm);
     const inputName = form.querySelector('[name="name"]');
@@ -22,42 +24,23 @@ export const form = (selectorForm, selectorBtn) => {
 
     const createSpinner = () => {
         const spinner = document.createElement('img');
-        spinner.style.cssText = `
-            display: flex;
-            width: 40px;
-            height: 40px;
-            justify-content: center;
-            align-items: center;
-        `;
+        spinner.classList.add('spinner');
         spinner.setAttribute('src', message.loading);
 
         return spinner;
     };
 
-    const createError = () => {
+    const createError = (e) => {
         const error = document.createElement('p');
-        error.classList.add('montserrat-regular');
-        error.style.cssText = `
-                display: block;
-                text-align: center;
-                color: red;
-                font-size: 14px;
-                padding: 2px 10px;
-            `;
-        error.textContent = `${message.error}`;
+        error.classList.add('error', 'montserrat-regular');
+        error.textContent = `${message.error}. Status: ${e.message}`;
 
         return error;
     };
 
     const createSuccessMessage = () => {
         const msg = document.createElement('p');
-        msg.style.cssText = `
-            display: block;
-            text-align: center;
-            color: green;
-            font-size: 14px;
-            padding: 2px 10px;
-        `;
+        msg.classList.add('success');
         msg.textContent = `${message.success}`;
 
         return msg;
@@ -67,30 +50,11 @@ export const form = (selectorForm, selectorBtn) => {
         setTimeout(() => {
             message.remove();
             btn.style.display = '';
-        }, 4000);
+        }, 6000);
     };
 
-    const postData = (data, spinner) => {
-        try {
-            // await new Promise((resolve) => setTimeout(resolve, 5000));
-            // throw new Error('');
-            console.log(data);
-
-            const success = createSuccessMessage();
-            spinner.remove();
-            form.append(success);
-            clearMessage(success, btn);
-            form.reset();
-        } catch (e) {
-            const error = createError(e);
-            spinner.remove();
-            form.append(error);
-            clearMessage(error, btn);
-        }
-    };
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
+    // функция отправки формы:
+    const formSend = () => {
         btn.style.display = 'none';
 
         if (!validateName || !validateEmail || !validateMessage) {
@@ -114,11 +78,29 @@ export const form = (selectorForm, selectorBtn) => {
             objData[key] = value;
         });
 
-        postData(objData, spinner);
+        postData(objData)
+            .then(() => {
+                const success = createSuccessMessage();
+                spinner.remove();
+                form.append(success);
+                clearMessage(success, btn);
+                form.reset();
+            })
+            .catch((e) => {
+                const error = createError(e);
+                spinner.remove();
+                form.append(error);
+                clearMessage(error, btn);
+            });
+    };
+
+    // обработчик
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        formSend();
     });
 
     // валидация инпутов
-
     inputName.addEventListener('input', (e) => {
         if (!/^[a-zA-Zа-яА-Я ]+$/gi.test(e.target.value)) {
             validateName = false;

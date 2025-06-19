@@ -21,6 +21,7 @@
         span {
             position: relative;
             animation: top 1.5s ease infinite;
+            animation-play-state: running;
             border: none;
         }
         span::after {

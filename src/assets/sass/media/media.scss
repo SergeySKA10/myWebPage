@@ -1,6 +1,20 @@
 @media (hover: none) {
-    * {
-        pointer-events: none;
+    .introducing__nav_li {
+        background-color: inherit;
+        color: rgb(255, 255, 255);
+    }
+    .introducing__contacts_icon {
+        box-shadow: none;
+        transform: scale(1);
+    }
+    .btn__about {
+        transform: scale(1);
+    }
+    .btn__form {
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        border-right: 3px solid rgb(0, 0, 0);
+        border-left: 3px solid rgb(0, 0, 0);
     }
     .portfolio__page_bg {
         background-color: rgba(255, 255, 255, 0.3);
@@ -291,6 +305,12 @@
     .btn__form {
         width: 150px;
         height: 40px;
+    }
+    .error {
+        font-size: 10px;
+    }
+    .success {
+        font-size: 10px;
     }
 }
 
