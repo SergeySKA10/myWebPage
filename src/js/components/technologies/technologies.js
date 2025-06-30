@@ -138,12 +138,14 @@ export const technologies = (idUsing, idLearning, idOther) => {
                 item.classList.add('skills__skill');
                 item.innerHTML = `
                 <div class="skills__skill_img">
-                    <img
+                    <img 
+                        tabindex="0"
                         src=${el.linkIcons}
                         alt=${el.name}
                     />
                 </div>
                 <p
+                    tabindex="0"
                     class="skills__skill_descr montserrat-regular"
                 >
                     ${el.name}
