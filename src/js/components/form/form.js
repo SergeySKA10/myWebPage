@@ -1,6 +1,6 @@
 import { postData } from '../../services/postData';
 
-export const form = (selectorForm, selectorBtn) => {
+export const form = (selectorForm, selectorBtn, cookies) => {
     const form = document.querySelector(selectorForm);
     const inputName = form.querySelector('[name="name"]');
     const textErrorName = form.querySelector('#inputName');
@@ -56,6 +56,20 @@ export const form = (selectorForm, selectorBtn) => {
     // функция отправки формы:
     const formSend = () => {
         btn.style.display = 'none';
+
+        if (!cookies.hasConsented()) {
+            textErrorMessage.style.display = 'block';
+            textErrorMessage.textContent =
+                'Нет соглашения об обработке персональных данных. Согласитесь с политикой cookies';
+            cookies.showCookiesWrapper();
+            setTimeout(() => {
+                textErrorMessage.style.display = 'none';
+                textErrorMessage.textContent = '';
+                btn.style.display = '';
+            }, 3000);
+
+            return;
+        }
 
         if (!validateName || !validateEmail || !validateMessage) {
             textErrorMessage.style.display = 'block';

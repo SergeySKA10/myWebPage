@@ -21,6 +21,7 @@
     }
     .portfolio__page_descr {
         background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
     }
 }
 
@@ -264,6 +265,12 @@
     .contacts__form {
         width: 500px;
     }
+    .wrapperCookie {
+        min-height: 150px;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 576px) {
@@ -320,5 +327,11 @@
     }
     .introducing__nav_li {
         font-size: 10px;
+    }
+    .skills__block {
+        padding: 10px 0px;
+    }
+    .skills__wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 0));
     }
 }
