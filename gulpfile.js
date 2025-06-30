@@ -102,7 +102,7 @@ gulp.task(
 );
 
 gulp.task('prod', () => {
-    gulp.src('./src/index.html')
+    gulp.src('./src/*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(dist));
     gulp.src('./src/mailer/**/*').pipe(gulp.dest(dist + '/mailer'));

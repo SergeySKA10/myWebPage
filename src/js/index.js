@@ -9,7 +9,7 @@ const cookies = new CookieConsent({
     linkColor: '#000000',
     btnTextColor: '#000000',
     text: 'Нажимая «Принять файлы cookie», вы соглашаетесь, c хранением файлов cookie на вашем устройстве',
-    link: '../policyCookies.html',
+    link: 'https://sergeykarakoskin.ru/policyCookies.html',
 });
 
 window.addEventListener('DOMContentLoaded', () => {
