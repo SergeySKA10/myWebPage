@@ -1,12 +1,12 @@
 const certificates = [
     {
         id: 'JavaScript',
-        src: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/picture.png?raw=true',
+        src: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/education/JS_React.jpg?raw=true',
         alt: 'certificate JS/React',
     },
     {
         id: 'TypeScript',
-        src: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/picture.png?raw=true',
+        src: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/education/JS_TS.jpg?raw=true',
         alt: 'certificate TS/React',
     },
 ];
