@@ -85,6 +85,9 @@ export const form = (selectorForm, selectorBtn) => {
                 form.append(success);
                 clearMessage(success, btn);
                 form.reset();
+                validateName = false;
+                validateEmail = false;
+                validateMessage = false;
             })
             .catch((e) => {
                 const error = createError(e);
