@@ -1,0 +1,26 @@
+.education {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .portfolio__pages {
+        background-color: inherit;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__descr {
+        font-size: 16px;
+        a {
+            text-transform: uppercase;
+            color: #000000;
+            cursor: pointer;
+        }
+    }
+}
