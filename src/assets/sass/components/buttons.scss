@@ -13,9 +13,6 @@
             text-decoration: none;
             color: #ffffff;
         }
-        &:hover {
-            transform: scale(1.05);
-        }
     }
     &__form {
         transition: all 0.3s;
@@ -31,6 +28,16 @@
         letter-spacing: 1px;
         text-align: center;
         cursor: pointer;
+    }
+}
+
+@media screen and (hover: hover) {
+    .btn__about {
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    .btn__form {
         &:hover {
             font-size: 17px;
             color: rgb(0, 0, 0, 0.7);

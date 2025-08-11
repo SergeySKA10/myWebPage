@@ -3,32 +3,32 @@ const webProducts = [
         id: 'picture',
         name: 'picture',
         link: 'https://picture.sergeykarakoskin.ru/',
-        img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/picture.png?raw=true',
-        stack: 'JavaScript (Desktop)',
+        img: 'https://storage.yandexcloud.net/mywebpageresources/picture.png',
+        stack: 'Реализована frontend часть сайта c использованием JavaScript. (Desktop версия)',
         category: 'frontend',
     },
     {
         id: 'loan',
         name: 'loan',
         link: 'https://loan.sergeykarakoskin.ru/',
-        img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/loan.png?raw=true',
-        stack: 'JavaScript (Desktop)',
+        img: 'https://storage.yandexcloud.net/mywebpageresources/loan.png',
+        stack: 'Реализована frontend часть сайта c использованием JavaScript. (Desktop версия)',
         category: 'frontend',
     },
     {
         id: 'food',
         name: 'food',
         link: 'https://test.sergeykarakoskin.ru/',
-        img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/food.png?raw=true',
-        stack: 'JavaScript (Desktop)',
+        img: 'https://storage.yandexcloud.net/mywebpageresources/food.png',
+        stack: 'Реализована frontend часть сайта c использованием JavaScript. (Desktop версия)',
         category: 'frontend',
     },
     {
         id: 'window',
         name: 'window',
         link: 'https://window.sergeykarakoskin.ru/',
-        img: 'https://github.com/SergeySKA10/myWebPage/blob/img/img/backgrounds_portfolio/frontend/window.png?raw=true',
-        stack: 'JavaScript (Desktop)',
+        img: 'https://storage.yandexcloud.net/mywebpageresources/window.png',
+        stack: 'Реализована frontend часть сайта c использованием JavaScript. (Desktop версия)',
         category: 'frontend',
     },
 ];
@@ -46,7 +46,7 @@ export const portfolio = () => {
         a.innerHTML = `
             <img class="portfolio__page_img" src= ${el.img} alt="web site"/>
             <div class="portfolio__page_bg">
-                <p class="portfolio__page_descr montserrat-regular">
+                <p class="portfolio__page_descr portfolio__page_descr-header montserrat-regular">
                     ${el.name}
                 </p>
                 <p class="portfolio__page_descr montserrat-regular">
