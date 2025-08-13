@@ -161,7 +161,7 @@ export default class CookieConsent {
 				color: ${this.btnTextColor};
 				border: 2px solid ${this.borderBtnColor};
 				background-color: inherit;
-                border-radius: 25px;
+                border-radius: 10px;
                 cursor: pointer;
 			`;
         });

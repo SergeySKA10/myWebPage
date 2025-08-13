@@ -58,11 +58,12 @@
     }
     .portfolio__page_bg {
         bottom: 254px;
+        gap: 10px;
     }
     .portfolio__page_descr {
         font-size: 14px;
         &-header {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 }
@@ -160,13 +161,14 @@
         grid-auto-rows: minmax(180px, 0);
     }
     .portfolio__page_bg {
+        gap: 0px;
         bottom: 184px;
     }
     .portfolio__page_descr {
-        font-size: 12px;
+        font-size: 10px;
         width: 300px;
         &-header {
-            font-size: 18px;
+            font-size: 14px;
         }
     }
     .portfolio {
