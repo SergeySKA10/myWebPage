@@ -1,5 +1,13 @@
 const webProducts = [
     {
+        id: 'ceramic',
+        name: 'ceramic soul',
+        link: 'https://ceramic.sergeykarakoskin.ru/',
+        img: 'https://storage.yandexcloud.net/mywebpageresources/ceramic.png',
+        stack: 'Верстка многостраничного сайта (Mobile first).<br/><br/> Стек: HTML, CSS (SCSS), JavaScript <br/><br/> Адаптация: под различные устройства',
+        category: 'layout',
+    },
+    {
         id: 'picture',
         name: 'picture',
         link: 'https://picture.sergeykarakoskin.ru/',
