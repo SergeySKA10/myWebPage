@@ -19,6 +19,12 @@ const skills = {
                 'https://img.icons8.com/?size=48&id=QBqFNfPPB2Kx&format=png',
         },
         {
+            id: 'TailwindCSS',
+            name: 'TailwindCSS',
+            linkIcons:
+                'https://img.icons8.com/?size=48&id=CIAZz2CYc6Kc&format=png',
+        },
+        {
             id: 'Bootstrap',
             name: 'Bootstrap',
             linkIcons:
@@ -49,45 +55,23 @@ const skills = {
                 'https://img.icons8.com/?size=80&id=b6vIINYN0kfW&format=png',
         },
         {
-            id: 'NodeJS',
-            name: 'NodeJS',
-            linkIcons:
-                'https://img.icons8.com/?size=48&id=hsPbhkOH4FMe&format=png',
-        },
-    ],
-    learning: [
-        {
-            id: 'Vite',
-            name: 'Vite',
-            linkIcons:
-                'https://img.icons8.com/?size=48&id=YO3YqSaTOu5K&format=png',
-        },
-        {
-            id: 'TailwindCSS',
-            name: 'TailwindCSS',
-            linkIcons:
-                'https://img.icons8.com/?size=48&id=CIAZz2CYc6Kc&format=png',
-        },
-        {
             id: 'NextJS',
             name: 'NextJS',
             linkIcons:
                 'https://img.icons8.com/?size=48&id=MWiBjkuHeMVq&format=png',
         },
         {
-            id: 'ExpressJS',
-            name: 'ExpressJS',
+            id: 'NodeJS',
+            name: 'NodeJS',
             linkIcons:
-                'https://img.icons8.com/?size=48&id=SDVmtZ6VBGXt&format=png',
+                'https://img.icons8.com/?size=48&id=hsPbhkOH4FMe&format=png',
         },
         {
-            id: 'PostgreSQL',
-            name: 'PostgreSQL',
+            id: 'Vite',
+            name: 'Vite',
             linkIcons:
-                'https://img.icons8.com/?size=80&id=Pv4IGT0TSpt8&format=png',
+                'https://img.icons8.com/?size=48&id=YO3YqSaTOu5K&format=png',
         },
-    ],
-    other: [
         {
             id: 'Gulp',
             name: 'Gulp',
@@ -117,19 +101,26 @@ const skills = {
             linkIcons:
                 'https://img.icons8.com/?size=80&id=EPbEfEa7o8CB&format=png',
         },
+    ],
+    learning: [
         {
-            id: 'England',
-            name: 'Английский язык B1/B2',
+            id: 'ExpressJS',
+            name: 'ExpressJS',
             linkIcons:
-                'https://img.icons8.com/?size=48&id=t3NE3BsOAQwq&format=png',
+                'https://img.icons8.com/?size=48&id=SDVmtZ6VBGXt&format=png',
+        },
+        {
+            id: 'PostgreSQL',
+            name: 'PostgreSQL',
+            linkIcons:
+                'https://img.icons8.com/?size=80&id=Pv4IGT0TSpt8&format=png',
         },
     ],
 };
 
-export const technologies = (idUsing, idLearning, idOther) => {
+export const technologies = (idUsing, idLearning) => {
     const wrapperUsingTechnologies = document.querySelector(idUsing);
     const wrapperLearningTechnologies = document.querySelector(idLearning);
-    const wrapperOtherTechnologies = document.querySelector(idOther);
 
     const renderItems = (wrapper, elems) => {
         try {
@@ -166,9 +157,6 @@ export const technologies = (idUsing, idLearning, idOther) => {
                 break;
             case 'learning':
                 renderItems(wrapperLearningTechnologies, skills[key]);
-                break;
-            case 'other':
-                renderItems(wrapperOtherTechnologies, skills[key]);
                 break;
             default:
                 console.error('Error while enumerating technology object');

@@ -58,8 +58,10 @@
             object-fit: cover;
         }
         &_bg {
-            position: relative;
-            bottom: 101%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            // bottom: 101%;
             z-index: 2;
             transition: all 0.5s;
             display: flex;
@@ -108,5 +110,11 @@
         &:hover {
             opacity: 0;
         }
+    }
+}
+
+@media screen and (hover: none) {
+    .portfolio__page_bg {
+        background-color: rgb(0, 0, 0, 0.8);
     }
 }

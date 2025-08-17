@@ -15,7 +15,7 @@ const cookies = new CookieConsent({
 window.addEventListener('DOMContentLoaded', () => {
     cookies.render();
     tabs('.portfolio__tabs_li', '.portfolio__pages');
-    technologies('#using', '#learning', '#otherTechnologies');
+    technologies('#using', '#learning');
     education('.education__article .portfolio__pages');
     form('#form', '#btn_submit', cookies);
 });
