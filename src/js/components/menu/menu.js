@@ -1,9 +1,4 @@
-const stateMenu = {
-    state: 'close',
-    changeState(state) {
-        this.state = state;
-    },
-};
+import { state } from '../state/state';
 
 export const menu = (buttonSelector, menuSelector, linksSelector) => {
     const btn = document.querySelector(buttonSelector);
@@ -13,16 +8,16 @@ export const menu = (buttonSelector, menuSelector, linksSelector) => {
 
     try {
         btn.addEventListener('click', () => {
-            if (stateMenu.state === 'close') {
-                stateMenu.changeState('open');
+            if (state.stateMenu === 'close') {
+                state.changeStateMenu('open');
                 btn.classList.add(`${buttonSelector.slice(1)}__active`);
                 menu.classList.add(`${menuSelector.slice(1)}_active`);
                 body.style.overflow = 'hidden';
                 return;
             }
 
-            if (stateMenu.state === 'open') {
-                stateMenu.changeState('close');
+            if (state.stateMenu === 'open') {
+                state.changeStateMenu('close');
                 btn.classList.remove(`${buttonSelector.slice(1)}__active`);
                 menu.classList.remove(`${menuSelector.slice(1)}_active`);
                 body.style.overflow = '';
@@ -32,8 +27,8 @@ export const menu = (buttonSelector, menuSelector, linksSelector) => {
 
         links.forEach((link) => {
             link.addEventListener('click', (e) => {
-                if (stateMenu.state === 'open') {
-                    stateMenu.changeState('close');
+                if (state.stateMenu === 'open') {
+                    state.changeStateMenu('close');
                     btn.classList.remove(`${buttonSelector.slice(1)}__active`);
                     menu.classList.remove(`${menuSelector.slice(1)}_active`);
                     body.style.overflow = '';

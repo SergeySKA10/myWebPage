@@ -6,7 +6,8 @@ export const myServices = (wrapperSelector) => {
         services.forEach((el) => {
             const article = document.createElement('article');
             article.classList.add('services__card');
-            article.setAttribute('data-aos', 'flip-up');
+            article.setAttribute('data-aos', 'fade-up');
+            article.setAttribute('data-aos-duration', '1500');
             let opportunitys = '';
             el.opportunitys.forEach((el) => {
                 opportunitys += `<p class="montserrat-regular">${el}</p>`;

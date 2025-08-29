@@ -1,4 +1,3 @@
-import Aos from 'aos';
 import { header } from './components/header/header';
 import { menu } from './components/menu/menu';
 import { tabs } from './components/tabs/tabs';
@@ -17,7 +16,11 @@ const cookies = new CookieConsent({
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-    Aos.init();
+    AOS.init({
+        once: false,
+        duration: 800,
+        offset: 50,
+    });
     cookies.render();
     header('#greetings', '#header', '#stack');
     menu('.burger', '.header__menu', '.header__menu-link');
@@ -26,4 +29,5 @@ window.addEventListener('DOMContentLoaded', () => {
     education('.education__article .portfolio__pages');
     myServices('.services__wrapper');
     form('#form', '#btn_submit', cookies);
+    AOS.refresh();
 });

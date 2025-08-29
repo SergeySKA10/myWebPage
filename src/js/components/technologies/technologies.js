@@ -9,6 +9,8 @@ export const technologies = (idUsing, idLearning) => {
             elems.forEach((el) => {
                 const item = document.createElement('div');
                 item.classList.add('skills__skill');
+                item.setAttribute('data-aos', 'fade-up');
+                item.setAttribute('data-aos-duration', '800');
                 item.innerHTML = `
                 <div class="skills__skill_img">
                     <img 
