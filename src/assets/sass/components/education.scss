@@ -8,6 +8,18 @@
         img {
             width: 100%;
             height: 100%;
+            border-radius: 5px;
+        }
+    }
+    .portfolio__page {
+        transition: all 0.3s;
+        position: relative;
+        @media screen and (hover: hover) {
+            &:hover {
+                z-index: 10;
+                transform: scale(1.05);
+                box-shadow: 6px 9px 10px -1px rgba(29, 32, 34, 0.5);
+            }
         }
     }
     &__article {
@@ -16,7 +28,11 @@
         gap: 20px;
     }
     &__descr {
-        font-size: 16px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
         a {
             text-transform: uppercase;
             color: #000000;

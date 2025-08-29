@@ -10,6 +10,7 @@
         border: none;
         a {
             font-size: 16px;
+            text-transform: uppercase;
             text-decoration: none;
             color: #ffffff;
         }
@@ -27,6 +28,7 @@
         line-height: 20px;
         letter-spacing: 1px;
         text-align: center;
+        text-transform: uppercase;
         cursor: pointer;
     }
 }

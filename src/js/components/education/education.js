@@ -1,15 +1,4 @@
-const certificates = [
-    {
-        id: 'JavaScript',
-        src: 'https://storage.yandexcloud.net/mywebpageresources/JS_React.jpg',
-        alt: 'certificate JS/React',
-    },
-    {
-        id: 'TypeScript',
-        src: 'https://storage.yandexcloud.net/mywebpageresources/JS_TS.jpg',
-        alt: 'certificate TS/React',
-    },
-];
+import { certificates } from '../../data/data';
 
 export const education = (wrapperSelector) => {
     const wrapper = document.querySelector(wrapperSelector);

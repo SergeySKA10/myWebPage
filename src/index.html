@@ -60,13 +60,13 @@
         <main>
             <section id="introducing" class="introducing">
                 <article class="introducing__me">
-                    <p class="introducing__greetings">Привет, меня зовут</p>
+                    <p id="greetings"class="introducing__greetings"></p>
 
-                    <h1 class="introducing__name">Сергей Каракоскин</h1>
+                    <h1 id="header" class="introducing__name"></h1>
 
-                    <p class="introducing__descr">
-                        разрабатываю пользовательские интерфейсы на JavaScript,
-                        TypeScript, React, NextJS
+                    <p class="introducing__descr montserrat-regular">
+                        разрабатываю пользовательские интерфейсы сайтов и приложений на:<br/> 
+                        <span id="stack" class="montserrat-bold"></span>
                     </p>
 
                     <address class="introducing__contacts">
@@ -134,6 +134,43 @@
                 </article>
 
                 <article class="introducing__photo">
+                    <div class="burger">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="header__menu">
+                        <nav class="header__menu-nav">
+                            <ul>
+                               <li>
+                                    <a
+                                        class="header__menu-link montserrat-bold"
+                                        href="#portfolio"
+                                        >Портфолио</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="header__menu-link montserrat-bold"
+                                        href="#skills"
+                                        >Технологии</a
+                                    >
+                                </li>
+                                 <li>
+                                    <a
+                                        class="header__menu-link montserrat-bold"
+                                        href="#services"
+                                        >Услуги</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="header__menu-link montserrat-bold"
+                                        href="#contacts"
+                                        >Связаться</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     <header class="introducing__header">
                         <nav class="introducing__nav">
                             <ul>
@@ -141,21 +178,28 @@
                                     <a
                                         class="introducing__nav_li montserrat-bold"
                                         href="#portfolio"
-                                        >Portfolio</a
+                                        >Портфолио</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="introducing__nav_li montserrat-bold"
                                         href="#skills"
-                                        >Skills</a
+                                        >Технологии</a
+                                    >
+                                </li>
+                                 <li>
+                                    <a
+                                        class="introducing__nav_li montserrat-bold"
+                                        href="#services"
+                                        >Услуги</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="introducing__nav_li montserrat-bold"
                                         href="#contacts"
-                                        >Contact me</a
+                                        >Связаться</a
                                     >
                                 </li>
                             </ul>
@@ -221,8 +265,8 @@
                 ></span>
             </div>
 
-            <div class="container">
-                <section id="skills" class="skills">
+            <div id="skills" class="container">
+                <section class="skills">
                     <header class="skills__header">
                         <h2 class="header montserrat-bold">Skills</h2>
                     </header>
@@ -266,6 +310,18 @@
                     </article>
 
                     </article>
+                </section>
+
+                <div class="line">
+                    <span
+                        ><span><span></span></span
+                    ></span>
+                </div>
+
+                <section id="services" class="services">
+                    <h2 class="services__header montserrat-bold">Чем я могу быть полезен</h2>
+                    <div class="services__wrapper">
+                    </div>
                 </section>
 
                 <div class="line">
