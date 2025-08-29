@@ -1,3 +1,4 @@
+import Aos from 'aos';
 import { header } from './components/header/header';
 import { menu } from './components/menu/menu';
 import { tabs } from './components/tabs/tabs';
@@ -16,6 +17,7 @@ const cookies = new CookieConsent({
 });
 
 window.addEventListener('DOMContentLoaded', () => {
+    Aos.init();
     cookies.render();
     header('#greetings', '#header', '#stack');
     menu('.burger', '.header__menu', '.header__menu-link');
