@@ -1,3 +1,5 @@
+@use '../base/variables.scss' as *;
+
 .skills {
     &__header {
         display: flex;
@@ -12,7 +14,7 @@
         gap: 80px;
     }
     &__subheader {
-        color: rgb(0, 0, 0);
+        color: $black;
         font-size: 30px;
         line-height: 30px;
         letter-spacing: 2px;

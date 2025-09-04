@@ -1,13 +1,11 @@
+@use '../base/variables.scss' as *;
+
 .introducing {
     display: flex;
     justify-content: center;
     min-height: 800px;
     padding-top: 50px;
-    background: linear-gradient(
-        100deg,
-        rgba(215, 215, 215, 1) 50%,
-        rgba(0, 0, 0, 0.9) 50%
-    );
+    background: linear-gradient(100deg, $second-main 50%, $dark 50%);
     &__me {
         padding: 0px 50px 100px 271px;
         width: 50%;
@@ -26,7 +24,7 @@
         &_li {
             transition: all 0.5s;
             padding: 8px 15px;
-            color: rgb(255, 255, 255);
+            color: $white;
             font-size: 17px;
             line-height: 21px;
             text-align: center;
@@ -35,22 +33,22 @@
             text-transform: uppercase;
             @media screen and (hover: hover) {
                 &:hover {
-                    background-color: rgb(255, 255, 255);
-                    color: rgb(0, 0, 0);
+                    background-color: $white;
+                    color: $black;
                 }
             }
         }
     }
     &__greetings {
         margin-top: 100px;
-        color: rgb(0, 0, 0);
+        color: $black;
         font-size: 40px;
         line-height: 47px;
     }
     &__name {
         margin-top: 10px;
         height: 94px;
-        color: rgb(0, 0, 0);
+        color: $black;
         font-size: 60px;
         line-height: 94px;
     }
@@ -68,8 +66,8 @@
             height: 30px;
             span {
                 padding: 4px 10px;
-                color: rgb(255, 255, 255);
-                background-color: rgb(0, 0, 0);
+                color: $white;
+                background-color: $black;
                 letter-spacing: 1px;
                 border-radius: 5px;
                 font-size: 22px;
@@ -167,10 +165,10 @@
         display: block;
         width: 25px;
         height: 1px;
-        background-color: #000000;
+        background-color: $black;
     }
     &__active {
-        border: 1px solid #000000;
+        border: 1px solid $black;
         background: transparent;
         & span:first-child {
             top: 4px;
@@ -211,7 +209,7 @@
         }
     }
     &-link {
-        color: #000000;
+        color: $black;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;

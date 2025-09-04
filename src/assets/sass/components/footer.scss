@@ -1,3 +1,5 @@
+@use '../base/variables.scss' as *;
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -33,7 +35,7 @@
             display: block;
             width: 15px;
             height: 2px;
-            background-color: #ffffff;
+            background-color: $white;
         }
         span::before {
             border: none;
@@ -45,7 +47,7 @@
             display: block;
             width: 16px;
             height: 2px;
-            background-color: #ffffff;
+            background-color: $white;
         }
         .min::after {
             width: 12px;
@@ -65,7 +67,7 @@
         }
     }
     &__author {
-        color: rgb(255, 255, 255);
+        color: $white;
         font-size: 18px;
         line-height: 18px;
     }
@@ -74,7 +76,7 @@
 .back_up {
     display: flex;
     justify-content: center;
-    color: rgb(255, 255, 255);
+    color: $white;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 3px;

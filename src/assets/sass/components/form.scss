@@ -1,3 +1,5 @@
+@use '../base/variables.scss' as *;
+
 .contacts {
     display: flex;
     padding: 0px 10px 100px 10px;
@@ -19,37 +21,37 @@
         gap: 50px;
     }
     &__input {
-        color: #000;
+        color: $black;
         background-color: inherit;
         width: 500px;
         height: 50px;
         padding: 0px 14px;
         border: none;
-        border-left: 5px solid #000;
-        border-bottom: 5px solid #000;
+        border-left: 5px solid $black;
+        border-bottom: 5px solid $black;
         &:focus {
             box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.7);
         }
         &::placeholder {
-            color: #000;
+            color: $black;
             text-transform: uppercase;
             font-size: 14px;
         }
     }
     &__text {
-        color: #000;
+        color: $black;
         background-color: inherit;
         height: 185px;
         width: 500px;
         padding: 15px 14px;
         border: none;
-        border-left: 5px solid #000;
-        border-bottom: 5px solid #000;
+        border-left: 5px solid $black;
+        border-bottom: 5px solid $black;
         &:focus {
             box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.7);
         }
         &::placeholder {
-            color: #000;
+            color: $black;
             text-transform: uppercase;
             font-size: 14px;
         }
