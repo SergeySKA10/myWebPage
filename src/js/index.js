@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         once: false,
         duration: 800,
-        offset: 50,
+        offset: 70,
     });
     cookies.render();
     header('#greetings', '#header', '#stack');
