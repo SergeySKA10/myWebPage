@@ -54,6 +54,7 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
+        <script src="https://kit.fontawesome.com/cec694ec53.js" crossorigin="anonymous"></script>
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.min.css" />
     </head>
@@ -67,7 +68,7 @@
 
                     <p class="introducing__descr montserrat-regular">
                         разрабатываю пользовательские интерфейсы сайтов и приложений на:<br/> 
-                        <span id="stack" class="montserrat-bold"></span>
+                        <span><span id="stack" class="montserrat-bold"></span></span>
                     </p>
 
                     <address class="introducing__contacts">
@@ -80,40 +81,28 @@
                                 href="https://t.me/karakoskinsergey"
                                 target="_blank"
                             >
-                                <img
-                                    src="assets/icons/social_media/telegram.svg"
-                                    alt="telegram"
-                                />
+                                <i class="fab fa-telegram-plane fa-2x" style="color: #000000"></i>
                             </a>
                             <a
                                 class="introducing__contacts_icon"
                                 href="https://github.com/SergeySKA10"
                                 target="_blank"
                             >
-                                <img
-                                    src="assets/icons/social_media/git.svg"
-                                    alt="Git"
-                                />
+                                <i class="fab fa-github fa-2x" style="color: #000000"></i>
                             </a>
                             <a
                                 class="introducing__contacts_icon"
                                 href="https://vk.com/sergeykarakoskin"
                                 target="_blank"
                             >
-                                <img
-                                    src="assets/icons/social_media/vk.svg"
-                                    alt="vkontakte"
-                                />
+                                <i class="fab fa-vk fa-2x" style="color: #000000"></i>
                             </a>
                             <a
                                 class="introducing__contacts_icon"
-                                href="mailto:karakoskinsergej@gmail.com"
-                                target="_blank"
+                            href="https://wa.me/79107139617"
+                            target="_blank"
                             >
-                                <img
-                                    src="assets/icons/social_media/mail.svg"
-                                    alt="Gmail"
-                                />
+                                <i class="fab fa-whatsapp fa-2x" style="color: #000000;"></i>
                             </a>
                         </div>
                     </address>
@@ -346,28 +335,28 @@
                             class="contacts__input montserrat-bold"
                             name="name"
                             type="text"
-                            placeholder="ENTER YOUR NAME*"
+                            placeholder="Ваше имя*"
                         />
                         <p id="inputName" class="contacts__validate_text"></p>
                         <input
                             class="contacts__input montserrat-bold"
                             name="email"
                             type="text"
-                            placeholder="ENTER YOUR EMAIL*"
+                            placeholder="Ваше имя email*"
                         />
                         <p id="inputEmail" class="contacts__validate_text"></p>
                         <input
                             class="contacts__input montserrat-bold"
                             name="phone"
                             type="text"
-                            placeholder="PHONE NUMBER"
+                            placeholder="Ваш номер телефона"
                         />
                         <p id="inputNumber" class="contacts__validate_text"></p>
                         <textarea
                             class="contacts__text montserrat-bold"
                             name="message"
                             type="text"
-                            placeholder="YOUR MESSAGE*"
+                            placeholder="Ваше сообщение и другие способы связи с вами*"
                         ></textarea>
                         <p
                             id="inputMessage"
@@ -399,30 +388,21 @@
                             href="https://t.me/karakoskinsergey"
                             target="_blank"
                         >
-                            <img
-                                src="assets/icons/social_media/telegram_white.svg"
-                                alt="telegram"
-                            />
+                            <i class="fab fa-telegram-plane fa-2x" style="color: #000000"></i>
                         </a>
                         <a
                             class="introducing__contacts_icon"
                             href="https://vk.com/sergeykarakoskin"
                             target="_blank"
                         >
-                            <img
-                                src="assets/icons/social_media/vk_white.svg"
-                                alt="vkontakte"
-                            />
+                            <i class="fab fa-vk fa-2x" style="color: #000000"></i>
                         </a>
                         <a
                             class="introducing__contacts_icon"
                             href="https://wa.me/79107139617"
                             target="_blank"
                         >
-                            <img
-                                src="assets/icons/social_media/whatsapp_white.svg"
-                                alt="whatsapp"
-                            />
+                           <i class="fab fa-whatsapp fa-2x" style="color: #000000"></i>
                         </a>
                     </address>
                 </div>
@@ -431,6 +411,54 @@
                     @2025 Sergey Karakoskin All Rights Reserved
                 </p>
             </footer>
+            <section id="modal" class="popup-modal">
+                <form
+                    id="popup-form"
+                    class="contacts__form"
+                    action="submit"
+                    method="post"
+                >
+                    <div id="close" class="popup-modal__close"></div>
+                    <input
+                        class="contacts__input montserrat-bold"
+                        name="name"
+                        type="text"
+                        placeholder="Ваше имя*"
+                    />
+                    <p id="inputName" class="contacts__validate_text"></p>
+                    <input
+                        class="contacts__input montserrat-bold"
+                        name="email"
+                        type="text"
+                        placeholder="Ваше имя email*"
+                    />
+                    <p id="inputEmail" class="contacts__validate_text"></p>
+                    <input
+                        class="contacts__input montserrat-bold"
+                        name="phone"
+                        type="text"
+                        placeholder="Ваш номер телефона"
+                    />
+                    <p id="inputNumber" class="contacts__validate_text"></p>
+                    <textarea
+                        class="contacts__text montserrat-bold"
+                        name="message"
+                        type="text"
+                        placeholder="Ваше сообщение и другие способы связи с вами*"
+                    ></textarea>
+                    <p
+                        id="inputMessage"
+                        class="contacts__validate_text"
+                    ></p>
+                    <button
+                        id="btn_submit-popup"
+                        class="btn__form montserrat-bold"
+                        type="submit"
+                    >
+                        Отправить
+                    </button>
+                </form>
+            </section> 
         </main>
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <script src="js/script.js"></script>

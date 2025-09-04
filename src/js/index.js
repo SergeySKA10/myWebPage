@@ -5,6 +5,7 @@ import { technologies } from './components/technologies/technologies';
 import { form } from './components/form/form';
 import { education } from './components/education/education';
 import { myServices } from './components/my_services/services';
+import { popupModal } from './components/popup-modal/popup-modal';
 import CookieConsent from './components/cookies/cookies';
 
 const cookies = new CookieConsent({
@@ -29,5 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     education('.education__article .portfolio__pages');
     myServices('.services__wrapper');
     form('#form', '#btn_submit', cookies);
+    form('#popup-form', '#btn_submit-popup', cookies);
+    popupModal('#modal', '#write', '#close');
     AOS.refresh();
 });

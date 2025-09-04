@@ -98,6 +98,9 @@
         margin-top: 20px;
         font-size: 16px;
         width: 300px;
+        span span {
+            font-size: 18px;
+        }
     }
     .introducing__contacts {
         margin-top: 50px;
@@ -226,9 +229,6 @@
                 margin: 0 auto;
             }
         }
-        &__subheader {
-            text-align: center;
-        }
         &__opportunitys {
             padding: 0 10px;
         }
@@ -239,6 +239,9 @@
     .footer {
         min-height: 100px;
         gap: 30px;
+    }
+    .popup-modal__close {
+        right: 0px;
     }
 }
 
