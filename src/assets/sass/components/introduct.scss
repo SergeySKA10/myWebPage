@@ -5,7 +5,7 @@
     justify-content: center;
     min-height: 800px;
     padding-top: 50px;
-    background: linear-gradient(100deg, $second-main 49.9%, #704214 50.1%);
+    background: linear-gradient(100deg, $second-main 49.9%, $main-color 50.1%);
     &__me {
         padding: 0px 50px 100px 271px;
         width: 50%;
