@@ -185,7 +185,7 @@ export const certificates = [
     },
     {
         id: 'TypeScript',
-        src: 'https://storage.yandexcloud.net/mywebpageresources/JS_TS.jpg',
+        src: 'https://storage.yandexcloud.net/mywebpageresources/TS_React.png',
         alt: 'certificate TS/React',
     },
 ];

@@ -19,7 +19,10 @@
             border-left: 5px solid $white;
             border-bottom: 5px solid $white;
             &:focus {
-                box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.7);
+                border-left: none;
+                border-bottom: none;
+                box-shadow: 6px 9px 10px -1px $grey-border;
+                outline: 4px solid $white;
             }
             &::placeholder {
                 color: $white;
@@ -32,7 +35,10 @@
             border-left: 5px solid $white;
             border-bottom: 5px solid $white;
             &:focus {
-                box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.7);
+                border-left: none;
+                border-bottom: none;
+                box-shadow: 6px 9px 10px -1px $grey-border;
+                outline: 4px solid $white;
             }
             &::placeholder {
                 color: $white;
@@ -40,6 +46,11 @@
                 font-size: 14px;
             }
         }
+    }
+    .btn__form {
+        border-right: 3px solid $white;
+        border-left: 3px solid $white;
+        color: $white;
     }
     &__close {
         border: none;

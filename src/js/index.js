@@ -31,6 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
     myServices('.services__wrapper');
     form('#form', '#btn_submit', cookies);
     form('#popup-form', '#btn_submit-popup', cookies);
-    popupModal('#modal', '#write', '#close');
+    popupModal('#modal', '#write', '#close', '#popup-form');
     AOS.refresh();
 });

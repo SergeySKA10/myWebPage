@@ -16,11 +16,13 @@
     .portfolio__page {
         transition: all 0.3s;
         position: relative;
+        box-shadow: $shadow;
+        border: 1px solid $black;
+        border-radius: 5px;
         @media screen and (hover: hover) {
             &:hover {
                 z-index: 10;
                 transform: scale(1.05);
-                box-shadow: 6px 9px 10px -1px rgba(29, 32, 34, 0.5);
             }
         }
     }

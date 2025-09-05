@@ -1,4 +1,11 @@
+@use '../base/variables.scss' as *;
+
 .portfolio {
+    .header {
+        border: 8px solid $black;
+        color: $black;
+        box-shadow: 6px 9px 10px -1px rgba(29, 32, 34, 0.5);
+    }
     min-height: 1000px;
     &__header {
         height: 321px;
@@ -10,7 +17,7 @@
     }
     &__nav {
         padding: 10px 100px;
-        background-color: rgb(26, 26, 26);
+        background-color: #704214;
         min-height: 112px;
         display: flex;
         justify-content: center;
@@ -23,6 +30,7 @@
         align-items: center;
         gap: 2px;
         &_li {
+            transition: all 0.3s;
             width: 149px;
             height: 48px;
             display: flex;
@@ -33,11 +41,18 @@
             line-height: 18px;
             border-bottom: 1px solid rgb(124, 124, 124);
             cursor: pointer;
+            @media screen and (hover: hover) {
+                &:hover {
+                    transform: scale(1.1);
+                    color: $dark;
+                    border-bottom: 1px solid $dark;
+                }
+            }
         }
     }
     &__pages {
         padding: 15px 0px;
-        background-color: rgb(26, 26, 26);
+        background-color: #704214;
         display: grid;
         justify-content: center;
         gap: 10px;
@@ -88,7 +103,7 @@
     }
     &__more {
         height: 70px;
-        background-color: rgb(26, 26, 26);
+        background-color: #704214;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -99,8 +114,8 @@
 }
 
 .tab_active {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    color: #ffffff !important;
+    border-bottom: 1px solid #ffffff !important;
 }
 
 @media screen and (hover: hover) {

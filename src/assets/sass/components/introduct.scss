@@ -5,7 +5,7 @@
     justify-content: center;
     min-height: 800px;
     padding-top: 50px;
-    background: linear-gradient(100deg, $second-main 50%, $dark 50%);
+    background: linear-gradient(100deg, $second-main 49.9%, #704214 50.1%);
     &__me {
         padding: 0px 50px 100px 271px;
         width: 50%;
@@ -34,7 +34,7 @@
             @media screen and (hover: hover) {
                 &:hover {
                     background-color: $white;
-                    color: $black;
+                    color: $main-color;
                 }
             }
         }
@@ -67,7 +67,7 @@
             span {
                 padding: 4px 10px;
                 color: $white;
-                background-color: $black;
+                background-color: $main-color;
                 letter-spacing: 1px;
                 border-radius: 5px;
                 font-size: 22px;
@@ -93,12 +93,11 @@
             width: 61px;
             height: 56px;
             border-radius: 15px;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: $shadow;
             background: rgb(196, 196, 196);
             text-decoration: none;
             @media screen and (hover: hover) {
                 &:hover {
-                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
                     transform: scale(1.1);
                 }
             }
@@ -118,6 +117,7 @@
         &_descr {
             font-size: 16px;
             text-transform: uppercase;
+            color: $black;
         }
     }
 
@@ -149,13 +149,12 @@
     width: 61px;
     height: 56px;
     border-radius: 15px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: $shadow;
     background: rgb(196, 196, 196);
     gap: 7px;
     cursor: pointer;
     @media screen and (hover: hover) {
         &:hover {
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
             transform: scale(1.1);
         }
     }
@@ -165,10 +164,10 @@
         display: block;
         width: 25px;
         height: 1px;
-        background-color: $black;
+        background-color: $main-color;
     }
     &__active {
-        border: 1px solid $black;
+        border: 1px solid $main-color;
         background: transparent;
         & span:first-child {
             top: 4px;
@@ -209,12 +208,31 @@
         }
     }
     &-link {
-        color: $black;
+        transition: all 0.3s ease-out;
+        color: $main-color;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
         text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        cursor: pointer;
+        @media screen and (hover: hover) {
+            &:hover {
+                font-size: 23px;
+                color: $black;
+                background-size: 100% 2px;
+            }
+        }
+        &:focus {
+            outline: none;
+            font-size: 23px;
+            color: $black;
+            background-size: 100% 2px;
+        }
     }
 }

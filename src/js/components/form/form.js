@@ -129,6 +129,7 @@ export const form = (selectorForm, selectorBtn, cookies) => {
         if (e.target.value.length < 2 || e.target.value.length > 50) {
             validateName = false;
             inputName.style.cssText = `
+                outline: none;
                 border: 4px solid red;
                 box-shadow: 0px 10px 15px 0px rgba(255, 0, 0, 0.7);
             `;
@@ -155,6 +156,7 @@ export const form = (selectorForm, selectorBtn, cookies) => {
         ) {
             validateEmail = false;
             inputEmail.style.cssText = `
+                outline: none;
                 border: 4px solid red;
                 box-shadow: 0px 10px 15px 0px rgba(255, 0, 0, 0.7);
             `;
@@ -177,6 +179,7 @@ export const form = (selectorForm, selectorBtn, cookies) => {
         if (/\D/g.test(e.target.value)) {
             e.target.value = e.target.value.slice(0, e.target.value.length - 1);
             inputPhone.style.cssText = `
+                outline: none;
                 border: 4px solid red;
                 box-shadow: 0px 10px 15px 0px rgba(255, 0, 0, 0.7);
             `;
@@ -196,9 +199,10 @@ export const form = (selectorForm, selectorBtn, cookies) => {
     });
 
     inputMessage.addEventListener('input', (e) => {
-        if (e.target.value.length < 10 || e.target.value.length > 500) {
+        if (e.target.value.length < 10 || e.target.value.length > 1000) {
             validateMessage = false;
             inputMessage.style.cssText = `
+                outline: none;
                 border: 4px solid red;
                 box-shadow: 0px 10px 15px 0px rgba(255, 0, 0, 0.7);
             `;
@@ -208,7 +212,7 @@ export const form = (selectorForm, selectorBtn, cookies) => {
                     'Поле обязательное для заполнения';
             } else {
                 textErrorMessage.textContent =
-                    'Количество символов должно быть больше 10 и не превышать 500';
+                    'Количество символов должно быть больше 10 и не превышать 1000';
             }
         } else {
             validateMessage = true;
