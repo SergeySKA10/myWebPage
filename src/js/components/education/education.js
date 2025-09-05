@@ -10,6 +10,7 @@ export const education = (wrapperSelector) => {
         div.setAttribute('data-aos-duration', '1000');
         const img = document.createElement('img');
         img.setAttribute('src', el.src);
+        img.setAttribute('loading', 'lazy');
         img.setAttribute('alt', el.alt);
         div.append(img);
         wrapper.append(div);

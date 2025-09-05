@@ -15,6 +15,7 @@ export const technologies = (idUsing, idLearning) => {
                 <div class="skills__skill_img">
                     <img 
                         tabindex="0"
+                        loading="lazy"
                         src=${el.linkIcons}
                         alt=${el.name}
                     />

@@ -29,7 +29,7 @@
         />
         <meta
             property="og:image"
-            content="https://storage.yandexcloud.net/mywebpageresources/og.png"
+            content="https://storage.yandexcloud.net/mywebpageresources/og.webp"
         />
 
         <!-- Twitter -->
@@ -45,7 +45,7 @@
         />
         <meta
             property="twitter:image"
-            content="https://storage.yandexcloud.net/mywebpageresources/og.png"
+            content="https://storage.yandexcloud.net/mywebpageresources/og.webp"
         />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -196,11 +196,11 @@
                         </nav>
                     </header>
                     <div class="introducing__photo_img">
-                        <img
-                            class="introducing__photo_me"
-                            src="https://storage.yandexcloud.net/mywebpageresources/my_photo.png"
-                            alt="my photo"
-                        />
+                        <picture>
+                            <source srcset="https://storage.yandexcloud.net/mywebpageresources/my_photo.webp" type="image/webp">
+                            <source srcset="https://storage.yandexcloud.net/mywebpageresources/my_photo.png" type="image/jpeg">
+                            <img class="introducing__photo_me" src="https://storage.yandexcloud.net/mywebpageresources/my_photo.png" alt="my photo">
+                        </picture>
                     </div>
                 </article>
             </section>

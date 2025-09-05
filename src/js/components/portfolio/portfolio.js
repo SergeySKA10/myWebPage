@@ -19,9 +19,12 @@ export const portfolio = () => {
         }
 
         a.setAttribute('data-aos-duration', '1200');
-        a.style.background = `url(${el.img} center center/cover no-repeat)`;
         a.innerHTML = `
-            <img class="portfolio__page_img" src= ${el.img} alt="web site"/>
+            <picture>
+                <source srcset=${el.img[0]} type="image/webp">
+                <source srcset=${el.img[1]} type="image/jpeg">
+                <img class="portfolio__page_img" src= ${el.img[1]} alt="web site" loading="lazy"/>
+            </picture>
             <div class="portfolio__page_bg">
                 <p class="portfolio__page_descr portfolio__page_descr-header montserrat-regular">
                     ${el.name}
