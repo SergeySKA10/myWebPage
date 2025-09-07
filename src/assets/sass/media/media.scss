@@ -320,6 +320,19 @@
         gap: 10px;
         justify-content: space-around;
     }
+    .popup-modal {
+        .contacts {
+            &__form {
+                width: 500px;
+            }
+            &__input {
+                width: 400px;
+            }
+            &__text {
+                width: 400px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -392,6 +405,19 @@
     .success {
         font-size: 10px;
     }
+    .popup-modal {
+        .contacts {
+            &__form {
+                width: 370px;
+            }
+            &__input {
+                width: 300px;
+            }
+            &__text {
+                width: 300px;
+            }
+        }
+    }
 }
 
 @media (max-width: 376px) {
@@ -400,5 +426,18 @@
     }
     .footer__author {
         font-size: 10px;
+    }
+    .popup-modal {
+        .contacts {
+            &__form {
+                width: 310px;
+            }
+            &__input {
+                width: 280px;
+            }
+            &__text {
+                width: 280px;
+            }
+        }
     }
 }
