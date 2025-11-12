@@ -62,65 +62,67 @@
         <main>
             <section id="introducing" class="introducing">
                 <article class="introducing__me">
-                    <p id="greetings"class="introducing__greetings"></p>
+                   <div class="introducing__me_wrapper">
+                        <p id="greetings"class="introducing__greetings"></p>
 
-                    <h1 id="header" class="introducing__name"></h1>
+                        <h1 id="header" class="introducing__name"></h1>
 
-                    <p class="introducing__descr montserrat-regular">
-                        разрабатываю пользовательские интерфейсы сайтов и приложений на:<br/> 
-                        <span><span id="stack" class="montserrat-bold"></span></span>
-                    </p>
-
-                    <address class="introducing__contacts">
-                        <p class="introducing__contact_me montserrat-bold">
-                            Связаться со мной:
+                        <p class="introducing__descr montserrat-regular">
+                            разрабатываю пользовательские интерфейсы сайтов и приложений на:<br/> 
+                            <span><span id="stack" class="montserrat-bold"></span></span>
                         </p>
-                        <div class="introducing__contacts_social">
-                            <a
-                                class="introducing__contacts_icon"
-                                href="https://t.me/karakoskinsergey"
+
+                        <address class="introducing__contacts">
+                            <p class="introducing__contact_me montserrat-bold">
+                                Связаться со мной:
+                            </p>
+                            <div class="introducing__contacts_social">
+                                <a
+                                    class="introducing__contacts_icon"
+                                    href="https://t.me/karakoskinsergey"
+                                    target="_blank"
+                                >
+                                    <i class="fab fa-telegram-plane fa-2x" style="color: #1e293b"></i>
+                                </a>
+                                <a
+                                    class="introducing__contacts_icon"
+                                    href="https://github.com/SergeySKA10"
+                                    target="_blank"
+                                >
+                                    <i class="fab fa-github fa-2x" style="color: #1e293b"></i>
+                                </a>
+                                <a
+                                    class="introducing__contacts_icon"
+                                    href="https://vk.com/sergeykarakoskin"
+                                    target="_blank"
+                                >
+                                    <i class="fab fa-vk fa-2x" style="color: #1e293b"></i>
+                                </a>
+                                <a
+                                    class="introducing__contacts_icon"
+                                href="https://wa.me/79107139617"
                                 target="_blank"
-                            >
-                                <i class="fab fa-telegram-plane fa-2x" style="color: #704214"></i>
-                            </a>
-                            <a
-                                class="introducing__contacts_icon"
-                                href="https://github.com/SergeySKA10"
-                                target="_blank"
-                            >
-                                <i class="fab fa-github fa-2x" style="color: #704214"></i>
-                            </a>
-                            <a
-                                class="introducing__contacts_icon"
-                                href="https://vk.com/sergeykarakoskin"
-                                target="_blank"
-                            >
-                                <i class="fab fa-vk fa-2x" style="color: #704214"></i>
-                            </a>
-                            <a
-                                class="introducing__contacts_icon"
-                            href="https://wa.me/79107139617"
-                            target="_blank"
-                            >
-                                <i class="fab fa-whatsapp fa-2x" style="color: #704214;"></i>
-                            </a>
+                                >
+                                    <i class="fab fa-whatsapp fa-2x" style="color: #1e293b;"></i>
+                                </a>
+                            </div>
+                        </address>
+
+                        <div class="introducing__about">
+                            <p class="introducing__about_descr montserrat-bold">
+                                Обо мне:
+                            </p>
+                            <button class="btn btn__about">
+                                <a
+                                    class="montserrat-bold"
+                                    href="https://github.com/SergeySKA10"
+                                    target="_blank"
+                                >
+                                    на GitHub
+                                </a>
+                            </button>
                         </div>
-                    </address>
-
-                    <div class="introducing__about">
-                        <p class="introducing__about_descr montserrat-bold">
-                            Обо мне:
-                        </p>
-                        <button class="btn btn__about">
-                            <a
-                                class="montserrat-bold"
-                                href="https://github.com/SergeySKA10"
-                                target="_blank"
-                            >
-                                на GitHub
-                            </a>
-                        </button>
-                    </div>
+                   </div>
                 </article>
 
                 <article class="introducing__photo">
@@ -203,6 +205,7 @@
                         </picture>
                     </div>
                 </article>
+                <div class="trapezoid"></div>
             </section>
 
             <section id="portfolio" class="portfolio">
@@ -462,6 +465,8 @@
                 </form>
             </section> 
         </main>
+
+        
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <script src="js/script.js"></script>
     </body>

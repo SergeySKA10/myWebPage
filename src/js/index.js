@@ -1,3 +1,4 @@
+import { AnimatedBackground } from './components/animation/background';
 import { header } from './components/header/header';
 import { menu } from './components/menu/menu';
 import { tabs } from './components/tabs/tabs';
@@ -7,6 +8,7 @@ import { education } from './components/education/education';
 import { myServices } from './components/my_services/services';
 import { popupModal } from './components/popup-modal/popup-modal';
 import CookieConsent from './components/cookies/cookies';
+import { initFloatingCubes } from './components/animation/cubes';
 
 const cookies = new CookieConsent({
     background: 'CadetBlue',
@@ -23,6 +25,12 @@ window.addEventListener('DOMContentLoaded', () => {
         offset: 70,
     });
     cookies.render();
+
+    const introSection = document.querySelector('.introducing');
+    if (introSection) {
+        new AnimatedBackground(introSection);
+    }
+
     header('#greetings', '#header', '#stack');
     menu('.burger', '.header__menu', '.header__menu-link');
     tabs('.portfolio__tabs_li', '.portfolio__pages');
@@ -32,5 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form('#form', '#btn_submit', cookies);
     form('#popup-form', '#btn_submit-popup', cookies);
     popupModal('#modal', '#write', '#close', '#popup-form');
+
     AOS.refresh();
 });

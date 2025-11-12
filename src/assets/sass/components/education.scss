@@ -17,7 +17,7 @@
         transition: all 0.3s;
         position: relative;
         box-shadow: $shadow;
-        border: 1px solid $black;
+        border: 1px solid $grey-border;
         border-radius: 5px;
         @media screen and (hover: hover) {
             &:hover {
@@ -37,9 +37,10 @@
         margin: 0 auto;
         padding: 20px;
         text-align: center;
+        color: $text-primary;
         a {
             text-transform: uppercase;
-            color: $black;
+            color: $text-primary;
             cursor: pointer;
         }
     }

@@ -1,10 +1,13 @@
 @use '../base/variables.scss' as *;
 
 .portfolio {
+    background: transparent;
+    // border-top: 1px solid $decoration-primary;
+    position: relative;
     .header {
-        border: 8px solid $black;
-        color: $black;
-        box-shadow: 6px 9px 10px -1px rgba(29, 32, 34, 0.5);
+        border: 8px solid $decoration-primary;
+        color: $text-primary;
+        box-shadow: $shadow;
     }
     min-height: 1000px;
     &__header {
@@ -12,12 +15,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url('https://storage.yandexcloud.net/mywebpageresources/portfolio_header.png')
-            center center/cover no-repeat;
+        // background: url('https://storage.yandexcloud.net/mywebpageresources/portfolio_header.png')
+        //     center center/cover no-repeat;
     }
     &__nav {
         padding: 10px 100px;
-        background-color: #704214;
+        // background-color: #704214;
         min-height: 112px;
         display: flex;
         justify-content: center;
@@ -36,23 +39,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: rgb(124, 124, 124);
+            color: #9db1cc;
             font-size: 18px;
             line-height: 18px;
-            border-bottom: 1px solid rgb(124, 124, 124);
+            border-bottom: 1px solid #9db1cc;
             cursor: pointer;
             @media screen and (hover: hover) {
                 &:hover {
                     transform: scale(1.1);
-                    color: $dark;
-                    border-bottom: 1px solid $dark;
+                    color: $text-primary;
+                    border-bottom: 1px solid $text-primary;
                 }
             }
         }
     }
     &__pages {
         padding: 15px 0px;
-        background-color: #704214;
+        // background-color: #704214;
         display: grid;
         justify-content: center;
         gap: 10px;
@@ -84,9 +87,9 @@
             align-items: center;
             width: 100%;
             height: 100%;
-            background-color: rgb(0, 0, 0, 0.95);
+            background-color: rgba(71, 85, 105, 0.9);
             border-radius: 10px;
-            border: 1px solid rgb(124, 124, 124);
+            border: 1px solid $grey-border;
         }
         &_descr {
             padding: 5px 10px;
@@ -103,19 +106,43 @@
     }
     &__more {
         height: 70px;
-        background-color: #704214;
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #ffffff;
+        color: $text-primary;
         font-size: 20px;
         line-height: 24px;
     }
 }
 
 .tab_active {
-    color: #ffffff !important;
-    border-bottom: 1px solid #ffffff !important;
+    transform: scale(1.05);
+    color: $dark !important;
+    border-bottom: 1px solid $dark !important;
+}
+
+.portfolio-bg-element {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.05);
+    animation: float 15s infinite ease-in-out;
+}
+
+.portfolio-bg-element:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.portfolio-bg-element:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 10%;
+    animation-delay: -5s;
 }
 
 @media screen and (hover: hover) {
