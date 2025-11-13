@@ -8,7 +8,6 @@ import { education } from './components/education/education';
 import { myServices } from './components/my_services/services';
 import { popupModal } from './components/popup-modal/popup-modal';
 import CookieConsent from './components/cookies/cookies';
-import { initFloatingCubes } from './components/animation/cubes';
 
 const cookies = new CookieConsent({
     background: 'CadetBlue',

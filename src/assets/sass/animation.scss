@@ -1,0 +1,28 @@
+@keyframes shine {
+    100% {
+        background-position: 500% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    }
+    20% {
+        background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    }
+    0% {
+        background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px,
+            0 calc(100% - 4px);
+    }
+}
+
+@keyframes liquidMove {
+    0%,
+    100% {
+        background-position: 0% 0%, 100% 100%, 50% 50%;
+    }
+    25% {
+        background-position: 100% 0%, 0% 100%, 80% 20%;
+    }
+    50% {
+        background-position: 100% 100%, 0% 0%, 20% 80%;
+    }
+    75% {
+        background-position: 0% 100%, 100% 0%, 80% 80%;
+    }
+}

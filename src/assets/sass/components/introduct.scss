@@ -14,11 +14,16 @@
         z-index: 2;
         padding: 0px 30px 80px 251px;
         width: 50%;
+        perspective: 1000px;
         &_wrapper {
-            // padding: 10px 20px 35px 35px;
-            // border: 1px solid $decoration-primary;
-            // border-radius: 10px;
-            // box-shadow: $shadow;
+            transition: all 0.3s;
+            transform: rotateY(10deg);
+            transform-style: preserve-3d;
+            @media screen and (hover: hover) {
+                &:hover {
+                    transform: rotateY(0deg);
+                }
+            }
         }
     }
     &__header {
@@ -54,7 +59,7 @@
         }
     }
     &__greetings {
-        margin-top: 100px;
+        margin-top: 80px;
         color: $text-primary;
         font-size: 40px;
         line-height: 47px;
@@ -167,12 +172,12 @@
     height: 56px;
     border-radius: 15px;
     box-shadow: $shadow;
-    background: rgb(196, 196, 196);
+    background: rgb(215, 215, 215);
     gap: 7px;
     cursor: pointer;
     @media screen and (hover: hover) {
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
     span {
@@ -208,7 +213,7 @@
     left: -100vw;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 255, 255, 0.95);
+    background-color: rgb(215, 215, 215, 0.95);
     transition: transform 0.4s;
     &_active {
         transform: translateX(100%);
@@ -266,7 +271,7 @@
 .trapezoid {
     position: absolute;
     bottom: 0;
-    border-bottom: 300px solid #f8fafc;
+    border-bottom: 200px solid #f8fafc;
     border-left: 30vw solid transparent;
     border-right: 30vw solid transparent;
     height: 0;

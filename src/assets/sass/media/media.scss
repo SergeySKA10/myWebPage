@@ -250,8 +250,10 @@
 
 @media (max-width: 768px) {
     .introducing {
-        background: url(https://storage.yandexcloud.net/mywebpageresources/portfolio_header.png)
-            center center / cover no-repeat;
+        box-shadow: none;
+    }
+    .introducing__me_wrapper {
+        transform: rotateY(0deg);
     }
     .introducing__photo_img {
         display: none;
@@ -276,15 +278,12 @@
     .introducing__about {
         margin-top: 30px;
     }
+    .trapezoid {
+        display: none;
+    }
     .portfolio__header {
         padding: 10px 0px;
-        background: inherit;
-        background-color: #1a1a1a;
         height: 130px;
-        .header {
-            border: 8px solid rgba(255, 255, 255, 0.6);
-            color: rgba(255, 255, 255, 0.6);
-        }
     }
     .portfolio__nav {
         padding-left: 5px;
