@@ -7,7 +7,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/ceramic.webp',
             'https://storage.yandexcloud.net/mywebpageresources/ceramic.png',
         ],
-        stack: 'Верстка многостраничного сайта (Mobile first).<br/><br/> Стек: HTML, CSS (SCSS), JavaScript <br/><br/> Адаптация: под различные устройства',
+        stack: 'Многостраничный сайта<br/><br/> Стек: HTML, CSS (SCSS), JavaScript<br/><br/> Фича: Многостраничность, формы, слайдеры <br/><br/> Адаптация: под различные устройства',
         category: 'layout',
     },
     {
@@ -18,7 +18,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/picture.webp',
             'https://storage.yandexcloud.net/mywebpageresources/picture.png',
         ],
-        stack: 'Реализована frontend часть сайта.<br/><br/> Стек: JavaScript <br/><br/> Адаптация: Desktop версия',
+        stack: 'Вэб-страница<br/><br/> Стек: JavaScript <br/><br/>Фича: Drag & Drop, модальные окна, табы, слайдеры<br/><br/>Адаптация: Desktop версия',
         category: 'frontend',
     },
     {
@@ -29,7 +29,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/loan.webp',
             'https://storage.yandexcloud.net/mywebpageresources/loan.png',
         ],
-        stack: 'Реализована frontend часть сайта.<br/><br/> Стек: JavaScript <br/><br/> Адаптация: Desktop версия',
+        stack: 'Вэб-сайт<br/><br/> Стек: JavaScript <br/><br/>Фича: Многостраничность, слайдеры <br/><br/>Адаптация: Desktop версия',
         category: 'frontend',
     },
     {
@@ -40,7 +40,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/food.webp',
             'https://storage.yandexcloud.net/mywebpageresources/food.png',
         ],
-        stack: 'Реализована frontend часть сайта.<br/><br/> Стек: JavaScript <br/><br/> Адаптация: Desktop версия',
+        stack: 'Вэб-страница<br/><br/> Стек: JavaScript <br/><br/>Фича: Табы, калькулятор, таймер, слайдер <br/><br/>Адаптация: Desktop версия',
         category: 'frontend',
     },
     {
@@ -51,7 +51,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/window.webp',
             'https://storage.yandexcloud.net/mywebpageresources/window.png',
         ],
-        stack: 'Реализована frontend часть сайта.<br/><br/> Стек: JavaScript <br/><br/> Адаптация: Desktop версия',
+        stack: 'Вэб-страница<br/><br/> Стек: JavaScript <br/><br/>Фича: Пошаговое модальное окно, табы <br/><br/>Адаптация: Desktop версия',
         category: 'frontend',
     },
     {
@@ -62,7 +62,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/todoList.jpg',
             'https://storage.yandexcloud.net/mywebpageresources/todoList.jpg',
         ],
-        stack: 'Вэб-приложение для формирования списка задач с возможнстью редактирования и удаления<br/><br/> Стек: TypeScript, React, NextJS.<br/><br/> Адаптация: под различные устройства<br/><br/> Развертывание: Vercel',
+        stack: 'Вэб-приложение - todo list<br/><br/> Стек: TypeScript, React, NextJS<br/><br/>Фича: Редактирование задач и работа с local storage <br/><br/>Адаптация: под различные устройства<br/><br/> Развертывание: Vercel',
         category: 'frontend',
     },
     {
@@ -73,8 +73,19 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/movieSearch.jpg',
             'https://storage.yandexcloud.net/mywebpageresources/movieSearch.jpg',
         ],
-        stack: 'Вэб-приложение для просмотра данных о фильмах, поиска (с фильтрами) и добавление в избранное <br/><br/> Стек: TypeScript, React, NextJS, API Кинопоиск <br/><br/> Адаптация: под различные устройства.<br/><br/> Развертывание: Vercel',
+        stack: 'Вэб-приложение - кино сервис<br/><br/>Фича: Фильтрация и работа с API <br/><br/> Стек: TypeScript, React, NextJS, API Кинопоиск <br/><br/> Адаптация: под различные устройства.<br/><br/> Развертывание: Vercel',
         category: 'frontend',
+    },
+    {
+        id: 'mini-trello',
+        name: 'Mini Trello',
+        link: 'https://mini-trello-16ifrig14-sergeyks-projects-81243763.vercel.app/',
+        img: [
+            'https://storage.yandexcloud.net/mywebpageresources/movieSearch.jpg',
+            'https://storage.yandexcloud.net/mywebpageresources/movieSearch.jpg',
+        ],
+        stack: 'Вэб-приложение - для управления проектами и задачами<br/><br/>Фича: Демо-режим + backend<br/><br/> Адаптация: до планшетной версии<br/><br/> Развертывание: Vercel',
+        category: 'fullstack',
     },
 ];
 

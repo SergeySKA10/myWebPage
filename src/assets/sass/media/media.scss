@@ -140,7 +140,7 @@
         width: 420px;
     }
     .introducing__me {
-        padding-left: 30px;
+        padding-left: 80px;
     }
     .introducing__photo_me {
         width: 420px;
@@ -170,12 +170,19 @@
     .introducing {
         flex-direction: column-reverse;
         background: inherit;
+        padding-bottom: 30px;
     }
     .introducing__me {
         width: 100%;
-        padding-left: 30px;
+        padding-left: 50px;
         padding-right: 30px;
         padding-bottom: 10px;
+    }
+    .introducing__greetings {
+        margin-top: 40px;
+    }
+    .introducing__me_wrapper {
+        transform: rotateY(0deg);
     }
     .introducing__photo {
         position: relative;
@@ -188,14 +195,20 @@
     }
     .introducing__photo_me {
         position: absolute;
-        right: 30px;
+        right: 0px;
         top: 6px;
     }
     .introducing__contacts {
         margin-top: 34px;
     }
+    .introducing__contacts_social {
+        gap: 25px;
+    }
     .introducing__about {
         margin-top: 20px;
+    }
+    .portfolio__header {
+        height: 221px;
     }
     .portfolio__pages {
         grid-template-columns: repeat(auto-fill, minmax(300px, 0));
@@ -252,9 +265,6 @@
     .introducing {
         box-shadow: none;
     }
-    .introducing__me_wrapper {
-        transform: rotateY(0deg);
-    }
     .introducing__photo_img {
         display: none;
     }
@@ -273,7 +283,7 @@
     }
     .introducing__contacts_social {
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
     }
     .introducing__about {
         margin-top: 30px;
@@ -353,14 +363,14 @@
         padding-left: 5px;
         padding-right: 5px;
     }
+    .portfolio .header {
+        border: 4px solid $decoration-primary;
+    }
     .header {
         width: 300px;
         height: 70px;
-        border: 4px solid $main-color;
+        border: 4px solid $decoration-primary;
         letter-spacing: 3px;
-    }
-    .portfolio__header .header {
-        border: 4px solid rgba(255, 255, 255, 0.6);
     }
     .skills__wrapper {
         grid-template-columns: repeat(auto-fill, minmax(100px, 0));
@@ -378,7 +388,11 @@
     .services__card {
         width: 310px;
     }
-
+    .education .portfolio__pages {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 0));
+        grid-template-rows: repeat(auto-fill, minmax(180px, 0));
+        grid-auto-rows: minmax(180px, 0);
+    }
     .services__img {
         width: 280px;
         height: 280px;
@@ -392,6 +406,9 @@
         width: 300px;
     }
     .contacts__text {
+        width: 300px;
+    }
+    .contacts__validate_text {
         width: 300px;
     }
     .btn__form {

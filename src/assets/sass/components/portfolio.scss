@@ -2,7 +2,6 @@
 
 .portfolio {
     background: transparent;
-    // border-top: 1px solid $decoration-primary;
     position: relative;
     .header {
         border: 8px solid $decoration-primary;
@@ -15,12 +14,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // background: url('https://storage.yandexcloud.net/mywebpageresources/portfolio_header.png')
-        //     center center/cover no-repeat;
     }
     &__nav {
         padding: 10px 100px;
-        // background-color: #704214;
         min-height: 112px;
         display: flex;
         justify-content: center;
@@ -149,11 +145,5 @@
         &:hover {
             opacity: 0;
         }
-    }
-}
-
-@media screen and (hover: none) {
-    .portfolio__page_bg {
-        background-color: rgb(0, 0, 0, 0.8);
     }
 }

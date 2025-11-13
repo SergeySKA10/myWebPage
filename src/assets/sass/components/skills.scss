@@ -28,6 +28,7 @@
         grid-auto-rows: minmax(170px, 0px);
     }
     &__skill {
+        transition: all 1s;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -46,6 +47,11 @@
             text-transform: uppercase;
             text-align: center;
             color: $text-primary;
+        }
+        @media screen and (hover: hover) {
+            &:hover {
+                animation: float 1s ease-in-out infinite;
+            }
         }
     }
 }

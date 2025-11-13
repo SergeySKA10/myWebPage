@@ -6,8 +6,8 @@ export default class CookieConsent {
         link = 'https://2gdpr.com/cookies',
         linkColor = '#fff',
         text = 'Я даю согласие на использование cookies',
-        textColor = 'black',
-        btnBorder = 'black',
+        textColor = '#fff',
+        btnBorder = '#fff',
         btnTextColor = '#fff',
         confirm = 'Accept',
         cancel = 'Cancel',
@@ -129,7 +129,7 @@ export default class CookieConsent {
             });
 
             el.addEventListener('mouseenter', (e) => {
-                e.target.style.backgroundColor = '#ffffff';
+                e.target.style.backgroundColor = '#1e293b';
                 e.target.style.border = 'none';
             });
 
@@ -176,7 +176,7 @@ export default class CookieConsent {
 		`;
 
         linkCookies.addEventListener('mouseenter', (e) => {
-            e.target.style.color = '#ffffff';
+            e.target.style.color = '#1e293b';
         });
 
         linkCookies.addEventListener('mouseleave', (e) => {

@@ -114,7 +114,7 @@
             height: 56px;
             border-radius: 15px;
             box-shadow: $shadow;
-            background: rgb(196, 196, 196);
+            background: $second-main;
             text-decoration: none;
             @media screen and (hover: hover) {
                 &:hover {
@@ -172,7 +172,7 @@
     height: 56px;
     border-radius: 15px;
     box-shadow: $shadow;
-    background: rgb(215, 215, 215);
+    background: $text-primary;
     gap: 7px;
     cursor: pointer;
     @media screen and (hover: hover) {
@@ -186,11 +186,10 @@
         display: block;
         width: 25px;
         height: 1px;
-        background-color: $text-primary;
+        background-color: $white;
     }
     &__active {
         border: 1px solid $decoration-primary;
-        background: transparent;
         & span:first-child {
             top: 4px;
             transform: rotate(45deg);
@@ -207,7 +206,7 @@
 
 .header__menu {
     z-index: 1000;
-    padding: 50px 10px;
+    padding: 90px 10px;
     position: fixed;
     top: 0;
     left: -100vw;
@@ -215,11 +214,13 @@
     height: 100vh;
     background-color: rgb(215, 215, 215, 0.95);
     transition: transform 0.4s;
+    overflow-y: auto;
+    scrollbar-width: none;
     &_active {
         transform: translateX(100%);
     }
     &-nav {
-        margin-top: 80px;
+        margin-top: 40px;
         padding-left: 50px;
         ul {
             display: flex;

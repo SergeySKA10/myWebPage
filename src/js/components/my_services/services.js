@@ -15,25 +15,62 @@ export const myServices = (wrapperSelector) => {
             });
 
             let icon;
+            let image;
 
             switch (el.id) {
                 case 'layout_services':
                     icon =
                         '<i class="fas fa-laptop-code fa-2x fa-flip" style="--fa-animation-duration: 3s;"></i>';
+                    image = `
+                        <div class="services__icon">
+                            <div class="layout-animation">
+                                <div class="layout-block"></div>
+                                <div class="layout-block"></div>
+                                <div class="layout-block"></div>
+                                <div class="layout-block"></div>
+                            </div>
+                        </div>
+                    `;
                     break;
                 case 'frontend_services':
                     icon = '<i class="fab fa-react fa-2x fa-spin"></i>';
+                    image = `
+                        <div class="services__icon">
+                            <div class="frontend-animation">
+                                <div class="component"></div>
+                                <div class="component"></div>
+                                <div class="component"></div>
+                                <div class="component-dot"></div>
+                                <div class="component-dot"></div>
+                                <div class="component-dot"></div>
+                            </div>
+                        </div>
+                    `;
                     break;
                 case 'fullstack_services':
                     icon =
                         '<i class="fas fa-sitemap fa-2x fa-fade" style="--fa-animation-duration: 1s;"></i>';
+                    image = `
+                        <div class="services__icon">
+                            <div class="fullstack-animation">
+                                <div class="stack-layer"></div>
+                                <div class="stack-layer"></div>
+                                <div class="stack-layer"></div>
+                                <div class="connection-line"></div>
+                                <div class="connection-line"></div>
+                                <div class="connection-line"></div>
+                            </div>
+                        </div>
+                    `;
                     break;
                 default:
                     throw new Error('id not found (services component render)');
             }
-
+            {
+                /* <img class="services__img" src=${el.src} alt=${el.header} loading="lazy"></img> */
+            }
             article.innerHTML = `
-                <img class="services__img" src=${el.src} alt=${el.header} loading="lazy">
+                ${image}
                 <div class="services__descr">
                     <div>
                         <header>

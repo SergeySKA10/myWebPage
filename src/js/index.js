@@ -10,9 +10,9 @@ import { popupModal } from './components/popup-modal/popup-modal';
 import CookieConsent from './components/cookies/cookies';
 
 const cookies = new CookieConsent({
-    background: 'CadetBlue',
-    linkColor: '#000000',
-    btnTextColor: '#000000',
+    background: '#475569',
+    linkColor: '#ffffff',
+    btnTextColor: '#ffffff',
     text: 'Нажимая «Принять файлы cookie», вы соглашаетесь, c хранением файлов cookie на вашем устройстве',
     link: 'https://sergeykarakoskin.ru/policyCookies.html',
 });
