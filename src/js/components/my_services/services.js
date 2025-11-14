@@ -24,10 +24,10 @@ export const myServices = (wrapperSelector) => {
                     image = `
                         <div class="services__icon">
                             <div class="layout-animation">
-                                <div class="layout-block"></div>
-                                <div class="layout-block"></div>
-                                <div class="layout-block"></div>
-                                <div class="layout-block"></div>
+                                <div class="layout-block montserrat-bold">WEB</div>
+                                <div class="layout-block montserrat-bold">HTML</div>
+                                <div class="layout-block montserrat-bold">CSS</div>
+                                <div class="layout-block montserrat-bold">JS</div>
                             </div>
                         </div>
                     `;
@@ -37,12 +37,9 @@ export const myServices = (wrapperSelector) => {
                     image = `
                         <div class="services__icon">
                             <div class="frontend-animation">
-                                <div class="component"></div>
-                                <div class="component"></div>
-                                <div class="component"></div>
-                                <div class="component-dot"></div>
-                                <div class="component-dot"></div>
-                                <div class="component-dot"></div>
+                                <div class="frontend-input"><div class="frontend-input_circle"></div></div>
+                                <div class="frontend-block-left"><div class="frontend-block-one"></div><div class="frontend-block-two"></div></div>
+                                <div class="frontend-block-right"><div class="frontend-block-one"></div><div class="frontend-block-two"></div></div>
                             </div>
                         </div>
                     `;
@@ -81,9 +78,9 @@ export const myServices = (wrapperSelector) => {
                             ${opportunitys}
                         </div>
                     </div>
-                    <div class="services__btn">
-                        <button id="write" class="btn btn__about"><a href="#">Написать</a></button>
-                    </div>
+                </div>
+                <div class="services__btn">
+                    <button id="write" class="btn btn__about"><a href="#">Написать</a></button>
                 </div>
             `;
             wrapper.append(article);

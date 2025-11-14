@@ -7,7 +7,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/ceramic.webp',
             'https://storage.yandexcloud.net/mywebpageresources/ceramic.png',
         ],
-        stack: 'Многостраничный сайта<br/><br/> Стек: HTML, CSS (SCSS), JavaScript<br/><br/> Фича: Многостраничность, формы, слайдеры <br/><br/> Адаптация: под различные устройства',
+        stack: 'Многостраничный сайта<br/><br/> Стек: HTML, CSS (SCSS), JavaScript<br/><br/> Фича: Mobile first верстка, формы, слайдеры <br/><br/> Адаптация: под различные устройства',
         category: 'layout',
     },
     {
@@ -29,7 +29,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/loan.webp',
             'https://storage.yandexcloud.net/mywebpageresources/loan.png',
         ],
-        stack: 'Вэб-сайт<br/><br/> Стек: JavaScript <br/><br/>Фича: Многостраничность, слайдеры <br/><br/>Адаптация: Desktop версия',
+        stack: 'Вэб-сайт<br/><br/> Стек: JavaScript <br/><br/>Фича: Cлайдеры <br/><br/>Адаптация: Desktop версия',
         category: 'frontend',
     },
     {
@@ -84,7 +84,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/movieSearch.jpg',
             'https://storage.yandexcloud.net/mywebpageresources/movieSearch.jpg',
         ],
-        stack: 'Вэб-приложение - для управления проектами и задачами<br/><br/>Фича: Демо-режим + backend<br/><br/> Адаптация: до планшетной версии<br/><br/> Развертывание: Vercel',
+        stack: 'Вэб-приложение - для управления проектами и задачами<br/><br/>Стек: TypeScript, NextJS, Express.js, PostgreSQL <br/><br/>Фича: Демо-режим, аутентификация, DnD анимация<br/><br/> Развертывание: Vercel',
         category: 'fullstack',
     },
 ];
