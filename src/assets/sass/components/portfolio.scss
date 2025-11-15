@@ -59,8 +59,11 @@
         grid-auto-rows: minmax(400px, 0px);
     }
     &__page {
+        transition: all 0.3s;
         position: relative;
         text-decoration: none;
+        border: none;
+        border-radius: 10px;
         &_img {
             position: relative;
             z-index: 1;
@@ -141,6 +144,13 @@
 }
 
 @media screen and (hover: hover) {
+    .portfolio__page {
+        &:hover {
+            border: 1px solid $grey-border;
+            box-shadow: $shadow;
+            transform: scale(1.01);
+        }
+    }
     .portfolio__page_bg {
         &:hover {
             opacity: 0;

@@ -69,47 +69,47 @@
 @keyframes change-child2 {
     0% {
         height: 82%;
-        left: 0;
+        left: 0%;
         width: 56%;
         transform: rotateY(0deg);
     }
     15% {
-        top: 65px;
+        top: 19%;
         opacity: 0.8;
         height: 50%;
-        left: 0;
+        left: 0%;
         width: 56%;
     }
     35% {
-        top: 65px;
+        top: 19%;
         width: 40%;
-        left: 210px;
+        left: 60%;
         opacity: 1;
         height: 50%;
     }
     60% {
-        left: 210px;
+        left: 60%;
         width: 40%;
         opacity: 0.8;
-        top: 250px;
+        top: 72%;
         height: 29%;
         transform: rotateY(-180deg);
     }
     80% {
-        top: 250px;
-        left: 0;
+        top: 72%;
+        left: 0%;
         width: 56%;
         height: 29%;
     }
     95% {
-        top: 65px;
-        left: 0;
+        top: 19%;
+        left: 0%;
         opacity: 1;
         width: 56%;
         height: 82%;
     }
     100% {
-        left: 0;
+        left: 0%;
         opacity: 1;
         width: 56%;
         height: 82%;
@@ -118,49 +118,49 @@
 
 @keyframes change-child3 {
     0% {
-        top: 65px;
+        top: 19%;
         width: 40%;
-        left: 210px;
+        left: 60%;
         opacity: 1;
         height: 50%;
     }
     15% {
-        left: 210px;
+        left: 60%;
         width: 40%;
         opacity: 0.8;
-        top: 250px;
+        top: 72%;
         height: 29%;
     }
     25% {
-        top: 250px;
-        left: 0;
+        top: 72%;
+        left: 0%;
         width: 56%;
         height: 29%;
     }
     35% {
-        top: 65px;
-        left: 0;
+        top: 19%;
+        left: 0%;
         opacity: 1;
         width: 56%;
         height: 82%;
     }
     60% {
-        left: 0;
+        left: 0%;
         opacity: 0.8;
         width: 56%;
         height: 50%;
     }
     95% {
-        top: 65px;
+        top: 19%;
         width: 40%;
-        left: 210px;
+        left: 60%;
         opacity: 1;
         height: 50%;
     }
     100% {
-        top: 65px;
+        top: 19%;
         width: 40%;
-        left: 210px;
+        left: 60%;
         opacity: 1;
         height: 50%;
     }
@@ -220,96 +220,96 @@
 @keyframes card-left {
     0% {
         opacity: 0;
-        top: 200px;
-        left: 30px;
+        top: 60%;
+        left: 10%;
     }
     5% {
         opacity: 0;
-        top: 200px;
-        left: 30px;
+        top: 60%;
+        left: 10%;
     }
     10% {
         opacity: 1;
-        top: 200px;
-        left: 30px;
+        top: 60%;
+        left: 10%;
     }
     25% {
         opacity: 1;
-        top: 50px;
-        left: 30px;
+        top: 9%;
+        left: 10%;
     }
     50% {
         opacity: 1;
-        top: 50px;
-        left: 230px;
+        top: 9%;
+        left: 67%;
     }
     75% {
         opacity: 1;
-        top: 50px;
-        left: 230px;
+        top: 9%;
+        left: 67%;
     }
     90% {
         opacity: 1;
-        top: 200px;
-        left: 230px;
+        top: 60%;
+        left: 67%;
     }
     95% {
         opacity: 1;
-        top: 200px;
-        left: 30px;
+        top: 60%;
+        left: 10%;
     }
     100% {
         opacity: 0;
-        top: 200px;
-        left: 30px;
+        top: 60%;
+        left: 10%;
     }
 }
 
 @keyframes card-right {
     0% {
         opacity: 0;
-        top: -50px;
-        left: 230px;
+        top: -20%;
+        left: 67%;
     }
     5% {
         opacity: 0;
-        top: -50px;
-        left: 230px;
+        top: -20%;
+        left: 67%;
     }
     10% {
         opacity: 1;
-        top: -50px;
-        left: 230px;
+        top: -20%;
+        left: 67%;
     }
     25% {
         opacity: 1;
-        top: 100px;
-        left: 230px;
+        top: 31%;
+        left: 67%;
     }
     50% {
         opacity: 1;
-        top: 100px;
-        left: 30px;
+        top: 31%;
+        left: 10%;
     }
     75% {
         opacity: 1;
-        top: 100px;
-        left: 30px;
+        top: 31%;
+        left: 10%;
     }
     90% {
         opacity: 1;
-        top: -50px;
-        left: 30px;
+        top: -20%;
+        left: 10%;
     }
     95% {
         opacity: 1;
-        top: -50px;
-        left: 230px;
+        top: -20%;
+        left: 67%;
     }
     100% {
         opacity: 0;
-        top: -50px;
-        left: 230px;
+        top: -20%;
+        left: 67%;
     }
 }
 

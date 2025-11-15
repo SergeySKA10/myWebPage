@@ -24,10 +24,10 @@ export const myServices = (wrapperSelector) => {
                     image = `
                         <div class="services__icon">
                             <div class="layout-animation">
-                                <div class="layout-block montserrat-bold">WEB</div>
-                                <div class="layout-block montserrat-bold">HTML</div>
-                                <div class="layout-block montserrat-bold">CSS</div>
-                                <div class="layout-block montserrat-bold">JS</div>
+                                <div class="layout-block montserrat-bold"><i class="fa-solid fa-2x fa-computer"></i></div>
+                                <div class="layout-block montserrat-bold"><i class="fa-brands fa-2x fa-html5"></i></div>
+                                <div class="layout-block montserrat-bold"><i class="fa-brands fa-2x fa-css"></i></div>
+                                <div class="layout-block montserrat-bold"><i class="fa-brands fa-2x fa-js"></i></div>
                             </div>
                         </div>
                     `;
@@ -38,20 +38,20 @@ export const myServices = (wrapperSelector) => {
                         <div class="services__icon">
                             <div class="frontend-animation">
                                 <div class="frontend-input"><div class="frontend-input_circle"></div></div>
-                                <div class="frontend-block-left"><div class="frontend-block-one"></div><div class="frontend-block-two"></div></div>
-                                <div class="frontend-block-right"><div class="frontend-block-one"></div><div class="frontend-block-two"></div></div>
+                                <div class="frontend-block-left"><div class="frontend-block-one"></div><div class="frontend-block-two"><i class="fa-solid fa-code fa-spin" style="color: #f8f9fc;"></i></div></div>
+                                <div class="frontend-block-right"><div class="frontend-block-one"></div><div class="frontend-block-two"><i class="fa-solid fa-code fa-spin" style="color: #f8f9fc;"></i></div></div>
                             </div>
                         </div>
                     `;
                     break;
                 case 'fullstack_services':
                     icon =
-                        '<i class="fas fa-sitemap fa-2x fa-fade" style="--fa-animation-duration: 1s;"></i>';
+                        '<i class="fa-brands fa-java fa-2x fa-bounce style="--fa-animation-duration: 3s;""></i>';
                     image = `
                         <div class="services__icon">
                             <div class="fullstack-animation">
                                 <div class="stack-layer"></div>
-                                <div class="stack-layer"></div>
+                                <div class="stack-layer"><i class="fa-solid fa-2x fa-database"></i></div>
                                 <div class="stack-layer"></div>
                                 <div class="connection-line"></div>
                                 <div class="connection-line"></div>

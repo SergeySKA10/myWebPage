@@ -81,8 +81,8 @@ export const webProducts = [
         name: 'Mini Trello',
         link: 'https://mini-trello-16ifrig14-sergeyks-projects-81243763.vercel.app/',
         img: [
-            'https://storage.yandexcloud.net/mywebpageresources/movieSearch.jpg',
-            'https://storage.yandexcloud.net/mywebpageresources/movieSearch.jpg',
+            'https://storage.yandexcloud.net/mywebpageresources/minitrello.webp',
+            'https://storage.yandexcloud.net/mywebpageresources/minitrello.jpg',
         ],
         stack: 'Вэб-приложение - для управления проектами и задачами<br/><br/>Стек: TypeScript, NextJS, Express.js, PostgreSQL <br/><br/>Фича: Демо-режим, аутентификация, DnD анимация<br/><br/> Развертывание: Vercel',
         category: 'fullstack',

@@ -60,6 +60,9 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            i {
+                color: $text-primary !important;
+            }
         }
     }
     &__subheader {
@@ -121,8 +124,8 @@
 
     &:nth-child(2) {
         transition: all 0.3s;
-        top: 65px;
-        left: 0;
+        top: 19%;
+        left: 0%;
         width: 56%;
         height: 82%;
         animation: change-child2 10s infinite;
@@ -130,8 +133,8 @@
     }
 
     &:nth-child(3) {
-        top: 65px;
-        left: 210px;
+        top: 19%;
+        left: 60%;
         width: 40%;
         height: 50%;
         animation: change-child3 10s infinite;
@@ -140,8 +143,8 @@
 
     &:nth-child(4) {
         transition: all 0.3s;
-        top: 250px;
-        left: 210px;
+        top: 72%;
+        left: 60%;
         width: 40%;
         height: 29%;
         animation: change-child4 10s infinite;
@@ -186,8 +189,8 @@
     &-left {
         opacity: 0;
         padding: 5px;
-        top: 200px;
-        left: 30px;
+        top: 60%;
+        left: 10%;
         width: 80px;
         height: 100px;
         border: 1px solid $decoration-primary;
@@ -203,8 +206,8 @@
         border: 1px solid $decoration-primary;
         border-radius: 5px;
         position: relative;
-        top: -50px;
-        left: 230px;
+        top: -20%;
+        left: 67%;
         animation: card-right 10s infinite;
     }
     &-one {
@@ -215,7 +218,9 @@
     }
     &-two {
         margin-top: 10px;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 50px;
         background-color: $decoration-primary;
         border-radius: 5px;
@@ -236,7 +241,9 @@
     border: 2px solid;
     border-radius: 8px;
     animation: rotate3d 6s ease-in-out infinite;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:nth-child(1) {
         top: 10px;
         left: 10px;
@@ -290,5 +297,33 @@
         left: 15%;
         right: 15%;
         animation-delay: 2s;
+    }
+}
+
+.services__icon {
+    .layout-animation,
+    .frontend-animation,
+    .fullstack-animation {
+        // Аппаратное ускорение
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+
+        // Плавные переходы opacity
+        transition: opacity 0.3s ease;
+
+        // Изначально приостановлены (управляется JS)
+        animation-play-state: paused;
+    }
+}
+
+// Для пользователей с prefers-reduced-motion
+@media (prefers-reduced-motion: reduce) {
+    .layout-animation,
+    .frontend-animation,
+    .fullstack-animation,
+    .canvas-background {
+        animation: none !important;
+        transition: none !important;
     }
 }

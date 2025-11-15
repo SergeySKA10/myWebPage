@@ -39,6 +39,12 @@
 }
 
 @media (max-width: 1440px) {
+    .services__btn {
+        bottom: 5px;
+    }
+    .services__card {
+        padding-bottom: 70px;
+    }
     .services__descr {
         max-width: 630px;
     }
@@ -154,7 +160,6 @@
         width: 300px;
         height: 300px;
     }
-
     .services__descr {
         max-width: 530px;
     }
@@ -241,6 +246,7 @@
             flex-direction: column;
             align-items: center;
             width: 560px;
+            padding-bottom: 70px;
             &:first-child {
                 margin: 0 auto;
             }
@@ -352,6 +358,7 @@
     .header__menu {
         padding: 30px 10px;
         &-nav {
+            margin-top: 70px;
             padding-left: 20px;
         }
     }
@@ -396,6 +403,10 @@
     .services__img {
         width: 280px;
         height: 280px;
+    }
+    .services__icon {
+        width: 300px;
+        height: 300px;
     }
     .contacts__form {
         width: 300px;

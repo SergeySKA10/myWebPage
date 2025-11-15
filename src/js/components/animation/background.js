@@ -5,8 +5,14 @@ export class AnimatedBackground {
         this.ctx = this.canvas.getContext('2d');
         this.particles = [];
         this.mouse = { x: 0, y: 0 };
+        this.animationId = null;
+        this.isRunning = false;
 
         this.canvas.className = 'canvas-background';
+        // Изначально прозрачный
+        this.canvas.style.opacity = '0.3';
+        this.canvas.style.transition = 'opacity 0.5s ease';
+
         this.container.prepend(this.canvas);
 
         this.init();
@@ -16,7 +22,26 @@ export class AnimatedBackground {
     init() {
         this.resize();
         this.createParticles();
+        this.startAnimation(); // Запускаем сразу, но с низкой opacity
+    }
+
+    startAnimation() {
+        if (this.isRunning) return;
+
+        this.isRunning = true;
         this.animate();
+    }
+
+    stopAnimation() {
+        this.isRunning = false;
+        if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+        }
+    }
+
+    setVisibility(isVisible) {
+        this.canvas.style.opacity = isVisible ? '1' : '0.3';
     }
 
     resize() {
@@ -26,7 +51,17 @@ export class AnimatedBackground {
     }
 
     createParticles() {
-        const count = 40; // Количество частиц
+        const windowInnerWidth = document.documentElement.clientWidth;
+        let count; // Количество частиц
+
+        if (windowInnerWidth > 1200) {
+            count = 40;
+        } else if (windowInnerWidth > 576) {
+            count = 20;
+        } else {
+            count = 15;
+        }
+
         this.particles = [];
 
         for (let i = 0; i < count; i++) {
@@ -101,9 +136,11 @@ export class AnimatedBackground {
     }
 
     animate() {
+        if (!this.isRunning) return;
+
         this.updateParticles();
         this.drawParticles();
-        requestAnimationFrame(() => this.animate());
+        this.animationId = requestAnimationFrame(() => this.animate());
     }
 
     bindEvents() {
