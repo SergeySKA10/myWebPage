@@ -8,7 +8,7 @@
     min-height: 800px;
     padding-top: 50px;
     align-items: center;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: $background-primary;
     box-shadow: 6px 9px 30px -1px rgba(71, 85, 105, 0.9);
     &__me {
         z-index: 2;
@@ -74,7 +74,7 @@
     &__descr {
         margin-top: 40px;
         width: 426px;
-        color: rgb(0, 0, 0, 0.8);
+        color: $text-grey;
         font-size: 20px;
         line-height: 25px;
         text-transform: uppercase;
@@ -126,6 +126,7 @@
     &__contact_me {
         font-size: 16px;
         text-transform: uppercase;
+        color: $text-primary;
     }
     &__about {
         margin-top: 70px;
@@ -212,7 +213,7 @@
     left: -100vw;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(215, 215, 215, 0.95);
+    background-color: $background-menu;
     transition: transform 0.4s;
     overflow-y: auto;
     scrollbar-width: none;
@@ -272,7 +273,7 @@
 .trapezoid {
     position: absolute;
     bottom: 0;
-    border-bottom: 200px solid #f8fafc;
+    border-bottom: 200px solid $trapezoid-border;
     border-left: 30vw solid transparent;
     border-right: 30vw solid transparent;
     height: 0;

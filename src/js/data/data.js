@@ -7,7 +7,7 @@ export const webProducts = [
             'https://storage.yandexcloud.net/mywebpageresources/ceramic.webp',
             'https://storage.yandexcloud.net/mywebpageresources/ceramic.png',
         ],
-        stack: 'Многостраничный сайта<br/><br/> Стек: HTML, CSS (SCSS), JavaScript<br/><br/> Фича: Mobile first верстка, формы, слайдеры <br/><br/> Адаптация: под различные устройства',
+        stack: 'Многостраничный сайт<br/><br/> Стек: HTML, CSS (SCSS), JavaScript<br/><br/> Фича: Mobile first верстка, формы, слайдеры <br/><br/> Адаптация: под различные устройства',
         category: 'layout',
     },
     {

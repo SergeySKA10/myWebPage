@@ -1,7 +1,7 @@
 @use '../base/variables.scss' as *;
 
 .popup-modal {
-    background-color: rgb(30, 41, 59, 0.97);
+    background-color: rgb(21, 31, 46, 0.98);
     transition: transform 0.5s;
     position: fixed;
     top: 0;
@@ -18,46 +18,46 @@
     .contacts {
         &__form {
             margin: 50px 0px;
-            border: 2px solid $white;
+            border: 2px solid $popup-primary;
             border-radius: 10px;
             overflow-y: auto;
             width: 600px;
         }
         &__input {
-            color: $white;
-            border: 1px solid $white;
+            color: $popup-primary;
+            border: 1px solid $popup-primary;
             border-radius: 5px;
             &:focus {
                 border: none;
-                box-shadow: 6px 9px 10px -1px $grey-border;
-                outline: 2px solid $white;
+                box-shadow: 6px 9px 10px -1px $popup-primary;
+                outline: 2px solid $popup-primary;
             }
             &::placeholder {
-                color: $white;
+                color: $popup-primary;
                 text-transform: uppercase;
                 font-size: 14px;
             }
         }
         &__text {
-            color: $white;
-            border: 1px solid $white;
+            color: $popup-primary;
+            border: 1px solid $popup-primary;
             border-radius: 5px;
             &:focus {
                 border: none;
-                box-shadow: 6px 9px 10px -1px $grey-border;
-                outline: 2px solid $white;
+                box-shadow: 6px 9px 10px -1px $popup-primary;
+                outline: 2px solid $popup-primary;
             }
             &::placeholder {
-                color: $white;
+                color: $popup-primary;
                 text-transform: uppercase;
                 font-size: 14px;
             }
         }
     }
     .btn__form {
-        border: 2px solid $white;
+        border: 2px solid $popup-primary;
         border-radius: 5px;
-        color: $white;
+        color: $popup-primary;
         @media screen and (hover: hover) {
             &:hover {
                 transform: scale(1.1);
@@ -67,7 +67,7 @@
         &:focus {
             transform: scale(1.1);
             box-shadow: 6px 9px 10px -1px $grey-border;
-            outline: 2px solid $white;
+            outline: 2px solid $popup-primary;
             border: none;
         }
     }
@@ -91,7 +91,7 @@
                 display: block;
                 width: 20px;
                 height: 2px;
-                background-color: $white;
+                background-color: $popup-primary;
             }
             &::after {
                 transform: rotate(45deg);
