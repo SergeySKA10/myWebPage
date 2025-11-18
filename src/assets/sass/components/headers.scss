@@ -6,14 +6,14 @@
     align-items: center;
     width: 404px;
     height: 107px;
-    border: 8px solid $decoration-primary;
+    border: 8px solid var(--decoration-primary);
     border-radius: 5px;
     background: transparent;
-    color: $text-primary;
+    color: var(--text-primary);
     font-size: 30px;
     line-height: 37px;
     letter-spacing: 10px;
     text-align: center;
     text-transform: uppercase;
-    box-shadow: $shadow;
+    box-shadow: var(--shadow);
 }

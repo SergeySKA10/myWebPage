@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 70px 30px;
-    background-color: $dark;
+    background-color: var(--dark);
     min-height: 326px;
     gap: 70px;
     &__back {
@@ -35,7 +35,7 @@
             display: block;
             width: 15px;
             height: 2px;
-            background-color: $white;
+            background-color: var(--white);
         }
         span::before {
             border: none;
@@ -47,7 +47,7 @@
             display: block;
             width: 16px;
             height: 2px;
-            background-color: $white;
+            background-color: var(--white);
         }
         .min::after {
             width: 12px;
@@ -65,12 +65,12 @@
             justify-content: center;
             gap: 20px;
             .introducing__contacts_icon {
-                box-shadow: 3px 6px 7px -2px $grey-border;
+                box-shadow: 3px 6px 7px -2px var(--grey-border);
             }
         }
     }
     &__author {
-        color: $white;
+        color: var(--white);
         font-size: 18px;
         line-height: 18px;
     }
@@ -79,7 +79,7 @@
 .back_up {
     display: flex;
     justify-content: center;
-    color: $white;
+    color: var(--white);
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 3px;

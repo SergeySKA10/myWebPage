@@ -14,7 +14,7 @@
         gap: 80px;
     }
     &__subheader {
-        color: $text-primary;
+        color: var(--text-primary);
         font-size: 30px;
         line-height: 30px;
         letter-spacing: 2px;
@@ -46,7 +46,7 @@
         &_descr {
             text-transform: uppercase;
             text-align: center;
-            color: $text-primary;
+            color: var(--text-primary);
         }
         @media screen and (hover: hover) {
             &:hover {

@@ -6,23 +6,23 @@
     border-radius: 10px;
     width: 150px;
     height: 50px;
-    box-shadow: $shadow;
+    box-shadow: var(--shadow);
     cursor: pointer;
     &__about {
         transition: all 0.5s ease-out;
         background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px,
             0 calc(100% - 4px);
-        background-image: $animate-shine;
+        background-image: var(--animate-shine);
         background-repeat: no-repeat;
         background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
-        background-color: $background-button;
-        border: 1px solid $grey-border;
+        background-color: var(--background-button);
+        border: 1px solid var(--grey-border);
         animation: shine 5s ease reverse infinite;
         a {
             font-size: 16px;
             text-transform: uppercase;
             text-decoration: none;
-            color: $white;
+            color: var(--white);
         }
     }
     &__form {
@@ -31,9 +31,9 @@
         height: 45px;
         background-color: inherit;
         border: none;
-        border-right: 3px solid $decoration-primary;
-        border-left: 3px solid $decoration-primary;
-        color: $decoration-primary;
+        border-right: 3px solid var(--decoration-primary);
+        border-left: 3px solid var(--decoration-primary);
+        color: var(--decoration-primary);
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 1px;
@@ -64,9 +64,9 @@
     .btn__form {
         &:hover {
             font-size: 17px;
-            color: $text-primary;
-            border-right: 3px solid $text-primary;
-            border-left: 3px solid $text-primary;
+            color: var(--text-primary);
+            border-right: 3px solid var(--text-primary);
+            border-left: 3px solid var(--text-primary);
         }
     }
 }

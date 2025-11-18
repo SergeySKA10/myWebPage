@@ -8,7 +8,7 @@
     min-height: 800px;
     padding-top: 50px;
     align-items: center;
-    background: $background-primary;
+    background: var(--background-primary);
     box-shadow: 6px 9px 30px -1px rgba(71, 85, 105, 0.9);
     &__me {
         z-index: 2;
@@ -42,7 +42,7 @@
         &_li {
             transition: all 0.5s;
             padding: 8px 15px;
-            color: $text-primary;
+            color: var(--text-primary);
             font-size: 17px;
             line-height: 21px;
             text-align: center;
@@ -51,30 +51,30 @@
             text-transform: uppercase;
             @media screen and (hover: hover) {
                 &:hover {
-                    background-color: $text-primary;
-                    color: $white;
-                    box-shadow: $shadow;
+                    background-color: var(--text-primary);
+                    color: var(--white);
+                    box-shadow: var(--shadow);
                 }
             }
         }
     }
     &__greetings {
         margin-top: 80px;
-        color: $text-primary;
+        color: var(--text-primary);
         font-size: 40px;
         line-height: 47px;
     }
     &__name {
         margin-top: 10px;
         height: 94px;
-        color: $text-primary;
+        color: var(--text-primary);
         font-size: 60px;
         line-height: 94px;
     }
     &__descr {
         margin-top: 40px;
         width: 426px;
-        color: $text-grey;
+        color: var(--text-grey);
         font-size: 20px;
         line-height: 25px;
         text-transform: uppercase;
@@ -85,12 +85,12 @@
             height: 30px;
             span {
                 padding: 4px 10px;
-                color: $white;
-                background-color: $text-primary;
+                color: var(--white);
+                background-color: var(--text-primary);
                 letter-spacing: 1px;
                 border-radius: 5px;
                 font-size: 22px;
-                box-shadow: $shadow;
+                box-shadow: var(--shadow);
             }
         }
     }
@@ -113,8 +113,8 @@
             width: 61px;
             height: 56px;
             border-radius: 15px;
-            box-shadow: $shadow;
-            background: $second-main;
+            box-shadow: var(--shadow);
+            background: var(--second-main);
             text-decoration: none;
             @media screen and (hover: hover) {
                 &:hover {
@@ -126,7 +126,7 @@
     &__contact_me {
         font-size: 16px;
         text-transform: uppercase;
-        color: $text-primary;
+        color: var(--text-primary);
     }
     &__about {
         margin-top: 70px;
@@ -138,7 +138,7 @@
         &_descr {
             font-size: 16px;
             text-transform: uppercase;
-            color: $text-primary;
+            color: var(--text-primary);
         }
     }
 
@@ -172,8 +172,8 @@
     width: 61px;
     height: 56px;
     border-radius: 15px;
-    box-shadow: $shadow;
-    background: $text-primary;
+    box-shadow: var(--shadow);
+    background: var(--text-primary);
     gap: 7px;
     cursor: pointer;
     @media screen and (hover: hover) {
@@ -187,10 +187,10 @@
         display: block;
         width: 25px;
         height: 1px;
-        background-color: $white;
+        background-color: var(--white);
     }
     &__active {
-        border: 1px solid $decoration-primary;
+        border: 1px solid var(--decoration-primary);
         & span:first-child {
             top: 4px;
             transform: rotate(45deg);
@@ -213,7 +213,7 @@
     left: -100vw;
     width: 100vw;
     height: 100vh;
-    background-color: $background-menu;
+    background-color: var(--background-menu);
     transition: transform 0.4s;
     overflow-y: auto;
     scrollbar-width: none;
@@ -233,7 +233,7 @@
     }
     &-link {
         transition: all 0.3s ease-out;
-        color: $text-primary;
+        color: var(--text-primary);
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -248,14 +248,14 @@
         @media screen and (hover: hover) {
             &:hover {
                 font-size: 23px;
-                color: $decoration-primary;
+                color: var(--decoration-primary);
                 background-size: 100% 2px;
             }
         }
         &:focus {
             outline: none;
             font-size: 23px;
-            color: $decoration-primary;
+            color: var(--decoration-primary);
             background-size: 100% 2px;
         }
     }
@@ -273,9 +273,52 @@
 .trapezoid {
     position: absolute;
     bottom: 0;
-    border-bottom: 200px solid $trapezoid-border;
+    border-bottom: 200px solid var(--trapezoid-border);
     border-left: 30vw solid transparent;
     border-right: 30vw solid transparent;
     height: 0;
     width: 100%;
+}
+
+.control {
+    z-index: 10;
+    top: 30px;
+    left: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    &__theme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    &__icon-light {
+        display: none;
+    }
+    &__icon-dark {
+        display: none;
+    }
+    &__btn {
+        transition: all 0.3s;
+        width: 50px;
+        height: 20px;
+        border-radius: 10px;
+        border: 1px solid var(--text-primary);
+        background-color: transparent;
+        cursor: pointer;
+        div {
+            transition: all 0.3s;
+            position: relative;
+            top: -2px;
+            display: block;
+            width: 22px;
+            height: 22px;
+            border-radius: 100%;
+            background-color: var(--white);
+            border: 1px solid var(--text-primary);
+        }
+    }
 }

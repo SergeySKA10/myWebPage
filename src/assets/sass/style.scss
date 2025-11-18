@@ -23,7 +23,7 @@
 }
 
 body {
-    background: $background-main;
+    background: var(--background-main);
     background-size: 200% 200%;
     background-size: 200% 200%;
     animation: liquidMove 25s ease-in-out infinite;

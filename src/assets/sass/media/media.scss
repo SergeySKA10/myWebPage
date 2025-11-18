@@ -169,6 +169,11 @@
 }
 
 @media (max-width: 992px) {
+    .control {
+        top: 20px;
+        right: 40px;
+        align-items: end;
+    }
     .burger {
         display: flex;
     }
@@ -351,6 +356,10 @@
 }
 
 @media (max-width: 576px) {
+    .control {
+        top: 20px;
+        right: 20px;
+    }
     .burger {
         width: 51px;
         height: 46px;
@@ -371,12 +380,12 @@
         padding-right: 5px;
     }
     .portfolio .header {
-        border: 4px solid $decoration-primary;
+        border: 4px solid var(--decoration-primary);
     }
     .header {
         width: 300px;
         height: 70px;
-        border: 4px solid $decoration-primary;
+        border: 4px solid var(--decoration-primary);
         letter-spacing: 3px;
     }
     .skills__wrapper {

@@ -1,5 +1,6 @@
 import { AnimatedBackground } from './components/animation/background';
 import { AnimationManager } from './components/animation/animation-manager';
+import { ThemeManager } from './components/control/theme';
 import { header } from './components/header/header';
 import { menu } from './components/menu/menu';
 import { tabs } from './components/tabs/tabs';
@@ -35,6 +36,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Инициализируем менеджер анимаций
     new AnimationManager().init();
+
+    try {
+        // Инициализируем менеджер смены цветовой темы
+        const themeManager = new ThemeManager();
+        themeManager.init();
+    } catch (e) {
+        console.log(e);
+    }
 
     header('#greetings', '#header', '#stack');
     menu('.burger', '.header__menu', '.header__menu-link');

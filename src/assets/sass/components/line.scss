@@ -14,7 +14,7 @@
         display: block;
         height: 3px;
         width: 40px;
-        background-color: $decoration-primary;
+        background-color: var(--decoration-primary);
     }
     &::after {
         content: '';
@@ -22,7 +22,7 @@
         display: block;
         height: 3px;
         width: 40px;
-        background-color: $decoration-primary;
+        background-color: var(--decoration-primary);
     }
     span {
         display: flex;
@@ -34,7 +34,7 @@
             width: 14px;
             height: 3px;
             transform: rotate(45deg);
-            background-color: $decoration-primary;
+            background-color: var(--decoration-primary);
         }
         &::after {
             content: '';
@@ -43,7 +43,7 @@
             width: 14px;
             height: 3px;
             transform: rotate(135deg);
-            background-color: $decoration-primary;
+            background-color: var(--decoration-primary);
         }
     }
 }

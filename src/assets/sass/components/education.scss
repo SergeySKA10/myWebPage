@@ -19,8 +19,8 @@
     .portfolio__page {
         transition: all 0.3s;
         position: relative;
-        box-shadow: $shadow;
-        border: 1px solid $grey-border;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--grey-border);
         border-radius: 5px;
         @media screen and (hover: hover) {
             &:hover {
@@ -39,7 +39,7 @@
         margin: 0 auto;
         padding: 20px;
         text-align: center;
-        color: $text-primary;
+        color: var(--text-primary);
         font-size: 30px;
         line-height: 30px;
         letter-spacing: 2px;

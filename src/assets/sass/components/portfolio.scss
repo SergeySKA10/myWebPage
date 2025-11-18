@@ -4,9 +4,9 @@
     background: transparent;
     position: relative;
     .header {
-        border: 8px solid $decoration-primary;
-        color: $text-primary;
-        box-shadow: $shadow;
+        border: 8px solid var(--decoration-primary);
+        color: var(--text-primary);
+        box-shadow: var(--shadow);
     }
     min-height: 1000px;
     &__header {
@@ -43,8 +43,8 @@
             @media screen and (hover: hover) {
                 &:hover {
                     transform: scale(1.1);
-                    color: $text-primary;
-                    border-bottom: 1px solid $text-primary;
+                    color: var(--text-primary);
+                    border-bottom: 1px solid var(--text-primary);
                 }
             }
         }
@@ -87,7 +87,7 @@
             height: 100%;
             background-color: rgba(71, 85, 105, 0.9);
             border-radius: 10px;
-            border: 1px solid $grey-border;
+            border: 1px solid var(--grey-border);
         }
         &_descr {
             padding: 5px 10px;
@@ -108,7 +108,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: $text-primary;
+        color: var(--text-primary);
         font-size: 20px;
         line-height: 24px;
     }
@@ -116,8 +116,8 @@
 
 .tab_active {
     transform: scale(1.05);
-    color: $dark !important;
-    border-bottom: 1px solid $dark !important;
+    color: var(--dark) !important;
+    border-bottom: 1px solid var(--dark) !important;
 }
 
 .portfolio-bg-element {
@@ -146,8 +146,8 @@
 @media screen and (hover: hover) {
     .portfolio__page {
         &:hover {
-            border: 1px solid $grey-border;
-            box-shadow: $shadow;
+            border: 1px solid var(--grey-border);
+            box-shadow: var(--shadow);
             transform: scale(1.01);
         }
     }
