@@ -1,5 +1,6 @@
 import { AnimatedBackground } from './components/animation/background';
 import { AnimationManager } from './components/animation/animation-manager';
+import { FocusManager } from './accessibility/focus-manager';
 import { ThemeManager } from './components/control/theme';
 import { header } from './components/header/header';
 import { menu } from './components/menu/menu';
@@ -20,6 +21,8 @@ const cookies = new CookieConsent({
 });
 
 window.addEventListener('DOMContentLoaded', () => {
+    new FocusManager();
+
     AOS.init({
         once: false,
         duration: 800,

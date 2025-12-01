@@ -63,12 +63,10 @@ export const myServices = (wrapperSelector) => {
                 default:
                     throw new Error('id not found (services component render)');
             }
-            {
-                /* <img class="services__img" src=${el.src} alt=${el.header} loading="lazy"></img> */
-            }
+
             article.innerHTML = `
                 ${image}
-                <div class="services__descr">
+                <div class="services__descr" aria-label="service-description">
                     <div>
                         <header>
                             ${icon}
@@ -80,7 +78,7 @@ export const myServices = (wrapperSelector) => {
                     </div>
                 </div>
                 <div class="services__btn">
-                    <button id="write" class="btn btn__about"><a href="#">Написать</a></button>
+                    <button id="write" class="btn btn__about" role="open dialog"><a href="#">Написать</a></button>
                 </div>
             `;
             wrapper.append(article);

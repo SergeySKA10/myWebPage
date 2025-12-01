@@ -19,6 +19,7 @@ export const portfolio = () => {
         }
 
         a.setAttribute('data-aos-duration', '1200');
+        a.setAttribute('role', 'link');
         a.innerHTML = `
             <picture>
                 <source srcset=${el.img[0]} type="image/webp">

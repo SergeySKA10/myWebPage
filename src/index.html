@@ -14,6 +14,7 @@
             name="keywords"
             content="Сергей Каракоскин, Каракоскин, фронтенд разработчик, frontend developer, разработка на JS, разработка на TS, разработка на React, разработка на NextJS"
         />
+        <meta name="description" content="Сергей Каракоскин - Frontend разработчик. Создание современных веб-приложений на React, TypeScript, Next.js" />
         <meta name="authpr" content="Sergey Karakoskin" />
 
         <!-- Open Graph / Facebook -->
@@ -65,29 +66,32 @@
         <link rel="stylesheet" href="assets/css/style.min.css" />
     </head>
     <body>
-        <main>
+        <!-- <a href="#main-content" class="skip-link">Перейти к основному содержимому</a> -->
+        <main id="main-content">
             <section id="introducing" class="introducing">
                 <div class="control">
                     <div class="control__theme">
-                        <button class="control__btn">
-                            <div></div>
+                        <button class="control__btn"
+                            aria-label="Переключить тему"
+                            aria-pressed="false">
+                            <div aria-hidden="true"></div>
                         </button>
-                        <div class="control__icon-light">
+                        <div class="control__icon-light" aria-hidden="true">
                             <i class="fa-solid fa-moon" style="color:#1e293b"></i>
                         </div>
-                        <div class="control__icon-dark">
+                        <div class="control__icon-dark" aria-hidden="true">
                             <i class="fa-solid fa-moon" style="color:#ffd43b"></i>
                         </div>
                         
                     </div>
                 </div>
-                <article class="introducing__me">
+                <article class="introducing__me" aria-labelledby="greetings header">
                     <div class="introducing__me_wrapper">
-                        <p id="greetings" class="introducing__greetings"></p>
+                        <p tabindex="0" id="greetings" class="introducing__greetings"></p>
 
-                        <h1 id="header" class="introducing__name"></h1>
+                        <h1 tabindex="0" id="header" class="introducing__name"></h1>
 
-                        <p class="introducing__descr montserrat-regular">
+                        <p tabindex="0" class="introducing__descr montserrat-regular">
                             разрабатываю пользовательские интерфейсы сайтов и
                             приложений на:<br />
                             <span
@@ -161,11 +165,18 @@
                 </article>
 
                 <article class="introducing__photo">
-                    <div class="burger">
-                        <span></span><span></span><span></span>
-                    </div>
-                    <div class="header__menu">
-                        <nav class="header__menu-nav">
+                    <button class="burger"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+
+                    <!-- Мобильное меню -->
+                    <div class="header__menu" aria-hidden="true">
+                        <nav class="header__menu-nav" aria-label="Основная навигация">
                             <ul>
                                 <li>
                                     <a
@@ -198,8 +209,10 @@
                             </ul>
                         </nav>
                     </div>
+
+                    <!-- Десктопное меню -->
                     <header class="introducing__header">
-                        <nav class="introducing__nav">
+                        <nav class="introducing__nav" aria-label="Основная навигация">
                             <ul>
                                 <li>
                                     <a
@@ -251,17 +264,18 @@
                 <div class="trapezoid"></div>
             </section>
 
-            <section id="portfolio" class="portfolio">
+            <section id="portfolio" class="portfolio" aria-labelledby="portfolio-header">
                 <header class="portfolio__header">
                     <h2 class="header montserrat-bold">Portfolio</h2>
                 </header>
 
-                <nav class="portfolio__nav">
-                    <ul class="portfolio__tabs">
+                <nav class="portfolio__nav" aria-label="Фильтры портфолио">
+                    <ul class="portfolio__tabs" role="tablist">
                         <li
                             tabindex="0"
                             class="portfolio__tabs_li montserrat-regular tab_active"
                             data-index="0"
+                            role="tab"
                         >
                             All
                         </li>
@@ -269,6 +283,7 @@
                             tabindex="0"
                             class="portfolio__tabs_li montserrat-regular"
                             data-index="1"
+                            role="tab"
                         >
                             Layout
                         </li>
@@ -276,6 +291,7 @@
                             tabindex="0"
                             class="portfolio__tabs_li montserrat-regular"
                             data-index="2"
+                            role="tab"
                         >
                             Frontend
                         </li>
@@ -283,13 +299,14 @@
                             tabindex="0"
                             class="portfolio__tabs_li montserrat-regular"
                             data-index="3"
+                            role="tab"
                         >
                             Fullstack
                         </li>
                     </ul>
                 </nav>
 
-                <article class="portfolio__pages"></article>
+                <article role="tabpanel" class="portfolio__pages" aria-labelledby="tab-all"></article>
                 <p class="portfolio__more montserrat-regular">
                     And many more to come!
                 </p>
@@ -302,7 +319,7 @@
             </div>
 
             <div class="container">
-                <section id="skills" class="skills">
+                <section id="skills" class="skills" aria-labelledby="skills-header">
                     <header class="skills__header">
                         <h2 class="header montserrat-bold">Skills</h2>
                     </header>
@@ -314,7 +331,7 @@
                             В работе использую стек технологий:
                         </p>
 
-                        <div id="using" class="skills__wrapper"></div>
+                        <div id="using" class="skills__wrapper" aria-labelledby="skills-all"></div>
 
                         <p
                             tabindex="0"
@@ -332,14 +349,14 @@
                     ></span>
                 </div>
 
-                <section class="education">
+                <section class="education" aria-labelledby="education-header">
                     <header class="skills__header">
                         <h2 class="header montserrat-bold">Education</h2>
                     </header>
 
                     <article class="education__article">
                         <p class="education__descr montserrat-bold">Сертификаты и дипломы
-                        <div class="portfolio__pages"></div>
+                        <div class="portfolio__pages" aria-labelledby="education-all"></div>
                     </article>
 
                     </article>
@@ -351,11 +368,11 @@
                     ></span>
                 </div>
 
-                <section id="services" class="services">
+                <section id="services" class="services" aria-labelledby="services-header">
                     <h2 class="services__header montserrat-bold">
                         Чем я могу быть полезен
                     </h2>
-                    <div class="services__wrapper"></div>
+                    <div class="services__wrapper" aria-labelledby="services-all"></div>
                 </section>
 
                 <div class="line">
@@ -364,7 +381,7 @@
                     ></span>
                 </div>
 
-                <section id="contacts" class="contacts">
+                <section id="contacts" class="contacts" aria-labelledby="contacts-header">
                     <header class="contacts__header">
                         <h2 class="header montserrat-bold">Contact</h2>
                     </header>
@@ -374,6 +391,7 @@
                         class="contacts__form"
                         action="submit"
                         method="post"
+                        aria-labelledby="contacts-title"
                     >
                         <input
                             class="contacts__input montserrat-bold"
@@ -381,21 +399,21 @@
                             type="text"
                             placeholder="Ваше имя*"
                         />
-                        <p id="inputName" class="contacts__validate_text"></p>
+                        <p id="inputName" class="contacts__validate_text" aria-live="polite"></p>
                         <input
                             class="contacts__input montserrat-bold"
                             name="email"
                             type="text"
                             placeholder="Ваше имя email*"
                         />
-                        <p id="inputEmail" class="contacts__validate_text"></p>
+                        <p id="inputEmail" class="contacts__validate_text" aria-live="polite"></p>
                         <input
                             class="contacts__input montserrat-bold"
                             name="phone"
                             type="text"
                             placeholder="Ваш номер телефона"
                         />
-                        <p id="inputNumber" class="contacts__validate_text"></p>
+                        <p id="inputNumber" class="contacts__validate_text" aria-live="polite"></p>
                         <textarea
                             class="contacts__text montserrat-bold"
                             name="message"
@@ -405,11 +423,13 @@
                         <p
                             id="inputMessage"
                             class="contacts__validate_text"
+                            aria-live="polite"
                         ></p>
                         <button
                             id="btn_submit"
                             class="btn__form montserrat-bold"
                             type="submit"
+                            role="button"
                         >
                             Отправить
                         </button>
@@ -464,15 +484,20 @@
                     @2025 Sergey Karakoskin All Rights Reserved
                 </p>
             </footer>
-            <section id="modal" class="popup-modal">
+            <section id="modal" 
+                class="popup-modal" 
+                role="dialog" 
+                aria-hidden="true"
+                aria-labelledby="modal-title">
                 <form
                     id="popup-form"
                     class="contacts__form"
                     action="submit"
                     method="post"
+                    aria-labelledby="modal-title"
                 >
-                    <div id="close" class="popup-modal__close">
-                        <div id="close"></div>
+                    <div id="close" class="popup-modal__close" aria-label="Close modal open">
+                        <div role="button" id="close"></div>
                     </div>
                     <input
                         class="contacts__input montserrat-bold"
@@ -480,32 +505,33 @@
                         type="text"
                         placeholder="Ваше имя*"
                     />
-                    <p id="inputName" class="contacts__validate_text"></p>
+                    <p id="inputName" class="contacts__validate_text" aria-live="polite"></p>
                     <input
                         class="contacts__input montserrat-bold"
                         name="email"
                         type="text"
                         placeholder="Ваше имя email*"
                     />
-                    <p id="inputEmail" class="contacts__validate_text"></p>
+                    <p id="inputEmail" class="contacts__validate_text" aria-live="polite"></p>
                     <input
                         class="contacts__input montserrat-bold"
                         name="phone"
                         type="text"
                         placeholder="Ваш номер телефона"
                     />
-                    <p id="inputNumber" class="contacts__validate_text"></p>
+                    <p id="inputNumber" class="contacts__validate_text" aria-live="polite"></p>
                     <textarea
                         class="contacts__text montserrat-bold"
                         name="message"
                         type="text"
                         placeholder="Ваше сообщение и другие способы связи с вами*"
                     ></textarea>
-                    <p id="inputMessage" class="contacts__validate_text"></p>
+                    <p id="inputMessage" class="contacts__validate_text" aria-live="polite"></p>
                     <button
                         id="btn_submit-popup"
                         class="btn__form montserrat-bold"
                         type="submit"
+                        role="button"
                     >
                         Отправить
                     </button>

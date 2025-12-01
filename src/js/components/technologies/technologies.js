@@ -11,6 +11,7 @@ export const technologies = (idUsing, idLearning) => {
                 item.classList.add('skills__skill');
                 item.setAttribute('data-aos', 'fade-up');
                 item.setAttribute('data-aos-duration', '800');
+                item.setAttribute('aria-label', 'skill');
                 item.innerHTML = `
                 <div class="skills__skill_img">
                     <img 

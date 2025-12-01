@@ -62,12 +62,12 @@ export default class CookieConsent {
         `;
 
         wrapper.innerHTML = `
-            <p class="wrapperCookie__text" style="text-align: center">${this.textConsent}</p>
+            <p tabindex="1" class="wrapperCookie__text" style="text-align: center">${this.textConsent}</p>
             <div class="wrapperCookie__btn" style="display: flex; gap: 10px ">
-                <button ${this.btnConfirm} class="btn_cookies">${this.btnConfirmText}</button>
-                <button ${this.btnCancel} class="btn_cookies">${this.btnCancelText}</button>
+                <button tabindex="1" ${this.btnConfirm} class="btn_cookies">${this.btnConfirmText}</button>
+                <button tabindex="1" ${this.btnCancel} class="btn_cookies">${this.btnCancelText}</button>
             </div>
-            <a class="link_cookies" href="${this.linkConsentCookies}">Политика в отношении файлов cookie</a>
+            <a tabindex="1" class="link_cookies" href="${this.linkConsentCookies}">Политика в отношении файлов cookie</a>
         `;
 
         if (window.innerWidth < 769) {
