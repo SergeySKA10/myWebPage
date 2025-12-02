@@ -22,6 +22,12 @@ export const menu = (buttonSelector, menuSelector, linksSelector) => {
         btn.setAttribute('aria-expanded', 'true');
         body.style.overflow = 'hidden';
 
+        // Разблокируем tabindex для ссылок
+        const links = menu.querySelectorAll('a');
+        links.forEach((link) => {
+            link.removeAttribute('tabindex');
+        });
+
         dispatchStateChange('open');
     };
 
@@ -32,6 +38,12 @@ export const menu = (buttonSelector, menuSelector, linksSelector) => {
         menu.setAttribute('aria-hidden', 'true');
         btn.setAttribute('aria-expanded', 'false');
         body.style.overflow = '';
+
+        // Блокируем tabindex для ссылок
+        const links = menu.querySelectorAll('a');
+        links.forEach((link) => {
+            link.setAttribute('tabindex', '-1');
+        });
 
         dispatchStateChange('close');
     };

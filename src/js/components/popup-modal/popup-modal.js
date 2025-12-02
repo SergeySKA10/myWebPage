@@ -68,4 +68,12 @@ export const popupModal = (
             closeModal();
         }
     });
+
+    closeElem.addEventListener('keydown', (e) => {
+        e.preventDefault();
+
+        if (e.code === 'Enter' && state.stateModal === 'open') {
+            closeModal();
+        }
+    });
 };

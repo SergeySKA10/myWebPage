@@ -11,7 +11,7 @@ export const myServices = (wrapperSelector) => {
 
             let opportunitys = '';
             el.opportunitys.forEach((el) => {
-                opportunitys += `<p class="montserrat-regular" style="display:flex; gap: 5px; align-items: center"><i class="fas fa-check-circle"></i> ${el}</p>`;
+                opportunitys += `<p tabindex="0" class="montserrat-regular" style="display:flex; gap: 5px; align-items: center"><i class="fas fa-check-circle"></i> ${el}</p>`;
             });
 
             let icon;
@@ -70,7 +70,7 @@ export const myServices = (wrapperSelector) => {
                     <div>
                         <header>
                             ${icon}
-                            <h3 class="services__subheader">${el.header}</h3>
+                            <h3 tabindex="0" class="services__subheader">${el.header}</h3>
                         </header>
                         <div class="services__opportunitys">
                             ${opportunitys}
